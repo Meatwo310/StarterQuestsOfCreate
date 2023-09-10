@@ -1,0 +1,7 @@
+{
+	id: "01DA8190190BCB49"
+	loot_size: 1
+	order_index: 3
+	rewards: [{ item: "create:experience_block", random_bonus: 3 }]
+	title: "Experience"
+}

@@ -1,0 +1,210 @@
+{
+    "com.simibubi.create.content.schematics.cannon.SchematicannonScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 8,
+                "bottom": 8
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 8,
+                "bottom": 8
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 8,
+                "bottom": 8
+            }
+        }
+    },
+    "com.simibubi.create.content.schematics.table.SchematicTableScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 8,
+                "bottom": 8
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 8,
+                "bottom": 8
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 8,
+                "bottom": 8
+            }
+        }
+    },
+    "com.simibubi.create.content.equipment.blueprint.BlueprintScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 3,
+                "bottom": 8
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 3,
+                "bottom": 8
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 3,
+                "bottom": 8
+            }
+        }
+    },
+    "com.simibubi.create.content.redstone.link.controller.LinkedControllerScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 3,
+                "bottom": 8
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 3,
+                "bottom": 8
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 3,
+                "bottom": 8
+            }
+        }
+    },
+    "com.simibubi.create.content.logistics.filter.FilterScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 8,
+                "bottom": 8
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 8,
+                "bottom": 8
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 8,
+                "bottom": 8
+            }
+        }
+    },
+    "com.simibubi.create.content.logistics.filter.AttributeFilterScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 22,
+                "bottom": 8
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 22,
+                "bottom": 8
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 22,
+                "bottom": 8
+            }
+        }
+    },
+    "com.simibubi.create.content.trains.schedule.ScheduleScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 42,
+                "bottom": 4
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 42,
+                "bottom": 4
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 42,
+                "bottom": 4
+            }
+        }
+    },
+    "plus.dragons.createcentralkitchen.content.logistics.item.guide.cooking.CookingGuideScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": -36,
+                "bottom": 8
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": -36,
+                "bottom": 8
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": -36,
+                "bottom": 8
+            }
+        }
+    },
+    "com.supermartijn642.trashcans.screen.TrashCanWidgetContainerScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 13
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 13
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 13
+            }
+        }
+    },
+    "lain.mods.cos.impl.client.gui.GuiCosArmorInventory": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": -39,
+                "bottom": -12
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": -27,
+                "bottom": -24
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": -15,
+                "bottom": -36
+            }
+        }
+    },
+    "plus.dragons.createenchantmentindustry.content.contraptions.enchanting.enchanter.EnchantingGuideScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": -27,
+                "bottom": 8
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": -27,
+                "bottom": 8
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": -27,
+                "bottom": 8
+            }
+        }
+    },
+    "com.jaquadro.minecraft.storagedrawers.inventory.DrawerScreen$Compacting": {
+        "playerSideOnly": true
+    },
+    "com.jaquadro.minecraft.storagedrawers.inventory.DrawerScreen$Slot1": {
+        "playerSideOnly": true
+    },
+    "com.jaquadro.minecraft.storagedrawers.inventory.DrawerScreen$Slot4": {
+        "playerSideOnly": true
+    },
+    "com.jaquadro.minecraft.storagedrawers.inventory.DrawerScreen$Slot2": {
+        "playerSideOnly": true
+    },
+    "com.refinedmods.refinedstorage.screen.ItemAmountScreen": {
+        "ignore": true
+    },
+    "com.refinedmods.refinedstorage.container.GridContainerMenu": {
+        "ignore": true
+    },
+    "net.mcreator.createatam.client.gui.InscriberGUIScreen": {
+        "playerSideOnly": true
+    },
+    "net.mcreator.createatam.client.gui.BrassSpeakerGUIScreen": {
+        "playerSideOnly": true
+    }
+}

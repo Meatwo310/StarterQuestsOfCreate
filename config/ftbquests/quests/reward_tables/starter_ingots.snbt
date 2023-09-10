@@ -1,0 +1,13 @@
+{
+	id: "6E519FBE25FFF6BF"
+	loot_size: 128
+	order_index: 2
+	rewards: [
+		{ item: "minecraft:iron_ingot", weight: 2.0f }
+		{ item: "minecraft:copper_ingot", weight: 0.75f }
+		{ item: "minecraft:gold_ingot", weight: 0.25f }
+		{ item: "create:zinc_ingot" }
+		{ item: "minecraft:coal", weight: 1.25f }
+	]
+	title: "Starter Ingots"
+}
