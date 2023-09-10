@@ -169,6 +169,8 @@
 				"　スポーン時に配布された、&9Prefab&rの&6House&rを使用して家を建設しましょう。"
 				""
 				"　&6チェストの中身を追加&rをオンにしておくと、有用なツールや食料等がチェスト(またはバレル等)に格納されます。また、&6マインシャフトの建設&rをオンにしておくと、地下までのはしごが整備されます。"
+				""
+				"　また、&9FasterLadderClimbing&rにより、はしごの上り下りが非常に高速で行えるようになっています。&9PreFab&rで生成されたはしごでは、特に有用でしょう。"
 			]
 			icon: "prefab:item_house"
 			id: "6D02788D00125B2F"
@@ -776,23 +778,18 @@
 		}
 		{
 			dependencies: ["49FCEA142093CFC8"]
-			description: ["　&9Corpse&rにより、死亡時のアイテムが保管され、簡単に回収できるようになっています。"]
-			hide_dependency_lines: true
+			description: ["　&9Corpse&rにより、死亡時のアイテムはその場に保管され、&6TransferAll&rボタンで簡単に回収できるようになっています。"]
+			icon: "createdeco:black_decal"
 			id: "10489C7B49DEC237"
-			invisible: true
-			optional: true
 			subtitle: "アイテムは死体の中"
 			tasks: [{
-				icon: "createdeco:black_decal"
-				id: "693D69E7F2EAF56C"
-				stat: "minecraft:deaths"
-				title: "死亡する"
-				type: "stat"
-				value: 1
+				id: "435E7FF40E44343A"
+				title: "OK"
+				type: "checkmark"
 			}]
 			title: "&4YOU DEAD&r"
 			x: -1.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["52A4046B11CE1F6F"]
@@ -888,8 +885,8 @@
 				type: "checkmark"
 			}]
 			title: "注: このパックはベータ版です"
-			x: -1.0d
-			y: 0.0d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["49FCEA142093CFC8"]
@@ -898,6 +895,7 @@
 				"Licensed under SIL Open Font License 1.1 (http://scripts.sil.org/OFL)"
 				"© 2015 自家製フォント工房, © 2014, 2015 Adobe Systems Incorporated, © 2015 M+ FONTS PROJECT"
 			]
+			icon: "minecraft:writable_book"
 			id: "1189729A9263EAA5"
 			tasks: [{
 				id: "5FECCDB3D0F676C6"
@@ -905,7 +903,7 @@
 				type: "checkmark"
 			}]
 			title: "同梱されているリソースパックについて"
-			x: -1.0d
+			x: -0.5d
 			y: -2.0d
 		}
 	]
