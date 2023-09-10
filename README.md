@@ -19,6 +19,11 @@ Note: Quests in this MODPack are written in Japanese. English translation is not
 - Farmer's Delight
 
 
+## インストール方法[WIP]
+
+https://www.curseforge.com/minecraft/modpacks/starter-quests-of-create
+
+
 ## 同梱しているリソースパックについて
 
 本MODPackに同梱されているリソースパック「Smoothed MC Font」には、「Rounded Mgen+」 (http://jikasei.me/font/rounded-mgenplus) を改変したフォントが含まれています。  
