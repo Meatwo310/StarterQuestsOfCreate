@@ -8,7 +8,6 @@
 /schematics/
 /screenshots/
 /shaderpacks/
-/resourcepacks/
 /XaeroWaypoints/
 /XaeroWaypoints_*/
 /XaeroWorldMap/
@@ -19,6 +18,8 @@
 /config/jei/world/
 /config/inventoryprofilesnext/*/
 !/config/inventoryprofilesnext/integrationHints/
+/resourcepacks/*
+!/resourcepacks/smoothed-mcfont-*/
 
 /.curseclient
 /options.txt

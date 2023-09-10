@@ -22,6 +22,9 @@ Note: Quests in this MODPack are written in Japanese. English translation is not
 ## 同梱しているリソースパックについて
 
 本MODPackに同梱されているリソースパック「Smoothed MC Font」には、「Rounded Mgen+」 (http://jikasei.me/font/rounded-mgenplus) を改変したフォントが含まれています。  
-The resource pack "Smoothed MC Font" included in this MODPack contains a font that is a modified version of "Rounded Mgen+" (http://jikasei.me/font/rounded-mgenplus).
+The resource pack "Smoothed MC Font" included in this MODPack contains a font that is a modified version of "Rounded Mgen+" (http://jikasei.me/font/rounded-mgenplus).  
 Licensed under SIL Open Font License 1.1 (http://scripts.sil.org/OFL)  
 © 2015 自家製フォント工房, © 2014, 2015 Adobe Systems Incorporated, © 2015 M+ FONTS PROJECT  
+
+## このパックのアイコンについて
+Icons for this MODPack: Auto repair icon by [Lorc](https://lorcblog.blogspot.com/) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/) (Modified using https://game-icons.net)
