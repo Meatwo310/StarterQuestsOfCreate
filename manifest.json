@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Starter Quests of Create",
-  "version": "v1.2-beta",
+  "version": "v1.2-beta2",
   "author": "",
   "files": [
     {
@@ -792,11 +792,6 @@
     {
       "projectID": 317716,
       "fileID": 4519258,
-      "required": true
-    },
-    {
-      "projectID": 871698,
-      "fileID": 4572780,
       "required": true
     },
     {
