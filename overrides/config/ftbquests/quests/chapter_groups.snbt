@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "304628E910EF7418", title: "ミッドゲーム" }
+		{ id: "37575636A3294EA1", title: "エンドゲーム" }
+		{ id: "5FFDEC9D991AE136", title: "Archived" }
+	]
+}

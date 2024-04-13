@@ -1,0 +1,1034 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4BDC658B97AB6279"
+	group: "304628E910EF7418"
+	icon: "refinedstorage:creative_controller"
+	id: "4BDC658B97AB6279"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1CB6AD309EC2C7E8"]
+			description: [
+				"　&6オルタネーター&rを用いて、回転エネルギーを電気エネルギーに変換しましょう。変換した電気エネルギーは&6FE&r&7(Forge Energy)&rと呼ばれ、多くの工業MODで用いられています。"
+				""
+				"　発電したFEを輸送するには、&6コネクタ&rと&6スプール巻き&rを利用します。"
+				""
+				"　コネクタにはモードがあり、レンチで&6右クリック&rすることで切り替えることができます。"
+				""
+				"　&6蓄電器&rではエネルギーを蓄えておくことができます。"
+				""
+				"　&6テスラコイル&rを用いれば、特定のアイテム&7(携帯グリッドやバッテリ機能を積んだバックパックなど)&rにエネルギーを蓄えておくことができます。"
+				""
+				"　&6電動モーター&rでは、電気エネルギーを回転エネルギー変換することができます。回転速度も設定できますが、速くするほど消費電力も大きくなります。"
+			]
+			icon: "createaddition:alternator"
+			id: "7B470E7C01096B50"
+			rewards: [{
+				id: "0F0CDDBD6C06DC09"
+				item: "sophisticatedbackpacks:battery_upgrade"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "5933DDF3DB7078A0"
+					item: "createaddition:copper_spool"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3FFB5FE893ADC06E"
+					item: "createaddition:gold_spool"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3368E9BAA38C24D7"
+					item: "createaddition:connector"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "714182AD3B016BB4"
+					item: "createaddition:large_connector"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1E0A47973E604A52"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "09792C21749ECCEB"
+					item: "createaddition:modular_accumulator"
+					type: "item"
+				}
+				{
+					id: "0C5295E3C737F370"
+					item: "createaddition:tesla_coil"
+					type: "item"
+				}
+				{
+					id: "4F42FE2A4E7D685A"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+			]
+			title: "ビリビリッ！"
+			x: -1.5d
+			y: 0.75d
+		}
+		{
+			dependencies: ["0D21794DE735B366"]
+			description: ["　&9Create: Crafts \\& Additions&rの&6圧延機&rは、金属の棒やワイヤーを制作するための機械です。上からアイテムを投げ込むかファンネル等で横から搬入出することができます。"]
+			icon: "createaddition:rolling_mill"
+			id: "1CB6AD309EC2C7E8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15D4007B59FB2C3D"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "07919982E49FD4F0"
+					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1451F52FB3482DE8"
+					item: "createaddition:copper_wire"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1F7233E9742A4047"
+					item: "createaddition:copper_rod"
+					type: "item"
+				}
+			]
+			title: "指を挟まれないように"
+			x: -3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["7B470E7C01096B50"]
+			description: ["　&9Refined Storage&rを進めるために、まずは中間素材の作成から始めましょう。大量に使用する&6ネザークォーツ&rは&9Create&rで無限化できます。また、精錬は&9Create&rのファンでまとめて行うとよいでしょう。"]
+			icon: "refinedstorage:advanced_processor"
+			id: "7590D6B96715D5C3"
+			rewards: [
+				{
+					count: 512
+					id: "34FF62D1C444D73F"
+					item: "refinedstorage:quartz_enriched_iron"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1B1BA02E53E6CC3F"
+					item: "refinedstorage:advanced_processor"
+					type: "item"
+				}
+				{
+					count: 512
+					id: "3EAC1942A4E4D596"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "419BAC5E43A47E3E"
+					item: "refinedstorage:construction_core"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "10A084D1CD7AB252"
+					item: "refinedstorage:destruction_core"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "02C27911924C8767"
+					item: "refinedstorage:improved_processor"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 512L
+					id: "48E14212021CFCEC"
+					item: "refinedstorage:processor_binding"
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "43979331E48C24C3"
+					item: "refinedstorage:silicon"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "543131305A99F690"
+					item: "refinedstorage:basic_processor"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "466950A8A592C2F5"
+					item: "refinedstorage:improved_processor"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7DEA64BF128D196D"
+					item: "refinedstorage:advanced_processor"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4EC830AB71CD183D"
+					item: "refinedstorage:construction_core"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "10C59708BA03055B"
+					item: "refinedstorage:destruction_core"
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "63E5ACC707D72048"
+					item: "refinedstorage:quartz_enriched_iron"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "077D2BC8EACE6083"
+					item: "refinedstorage:machine_casing"
+					type: "item"
+				}
+			]
+			title: "まとめて作って時短しよう"
+			x: 0.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["7590D6B96715D5C3"]
+			description: [
+				"　&6コントローラー&rは、&6Refined Storageネットワーク&rの核となるブロックで、接続されている機器の管理や、稼働に必要なエネルギーの搬入を行います。"
+				""
+				"　&6外部ストレージ&rは、ワールドに設置されたチェストやバレルなどのコンテナをネットワークに組み込み、RS倉庫で閲覧・管理できるようにするためのブロックです。コントローラーから(必要なら)ケーブル経由で接続してください。"
+				""
+				"　&6グリッド&rは、&bネットワークに組み込まれているコンテナのアイテムをすべて&r閲覧することができます。また、アイテムのソートも可能で、量によるソートやアイテムIDによるソート、またそれらの逆順も行えます。"
+				""
+				"　&6制作グリッド&rはグリッドにクラフト機能がついたブロックで、JEIのクラフトレシピ画面での＋アイコンによるレシピの自動配置に対応しているため、非常に便利です。"
+				""
+				"　なお、Refined Storageの機械の多くは染料で右クリックすることで染色可能です。用途などに応じて色分けすることもできます。"
+			]
+			icon: "refinedstorage:controller"
+			id: "026433983382E62A"
+			rewards: [{
+				id: "5D46E429567D82E9"
+				item: "refinedstorage:wrench"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "6276308F96BC0420"
+					item: "refinedstorage:controller"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "1135AB3EF8A22943"
+					item: "refinedstorage:cable"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1B0149A872374E49"
+					item: "refinedstorage:external_storage"
+					type: "item"
+				}
+				{
+					id: "281F61C11B90DFB6"
+					item: "refinedstorage:grid"
+					type: "item"
+				}
+				{
+					id: "6B0EF17AD8F96597"
+					item: "refinedstorage:crafting_grid"
+					type: "item"
+				}
+			]
+			title: "最小構成"
+			x: 1.5d
+			y: 0.75d
+		}
+		{
+			dependencies: ["026433983382E62A"]
+			description: ["　&6ディスクドライブ&rは、任意の容量の&6ディスク&rを挿入することで、アイテムを&6データとして&r管理できるようにするブロックです。これによりコンテナと外部ストレージを大量に設置する必要がなくなります。また、類似MODの&9Applied Energistics 2&rとは異なり、&6アイテムの種類数に制限はありません&r。"]
+			icon: "refinedstorage:disk_drive"
+			id: "13FDDE99B062B15E"
+			rewards: [
+				{
+					id: "125C212FABAE99E3"
+					item: "refinedstorage:64k_storage_disk"
+					type: "item"
+				}
+				{
+					id: "07E0110654E1EA33"
+					item: {
+						Count: 1b
+						id: "refinedstorage:portable_grid"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2F7CB501305E2E64"
+					item: "refinedstorage:disk_drive"
+					type: "item"
+				}
+				{
+					id: "2969933AC05151EA"
+					item: "refinedstorage:64k_storage_disk"
+					type: "item"
+				}
+			]
+			title: "アイテムをデータ管理"
+			x: 3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["026433983382E62A"]
+			description: [
+				"　&6パターン&rと&6クラフター&rを用いてクラフトを自動化しましょう。"
+				""
+				"　まずは&6パターングリッド&rを用いてクラフトレシピをパターンに登録します。手動での登録も可能ですが、通常はJEIでレシピを表示して&6[+]&rアイコンをクリックすることでレシピを登録します。"
+				""
+				"　レシピを登録したパターンは&6クラフター&rに入れることで、グリッド等からそのアイテムのクラフトを発注できるようになります。なお、クラフターは&6レンチ&r等で向きを変えることができます。"
+				""
+				"　&6クラフターマネージャー&rでは、ネットワークに接続されているクラフターをすべて管理できます。"
+				""
+				"　&6クラフトモニター&rでは発注された自動クラフトの進捗を確認することができます。"
+			]
+			icon: "refinedstorage:pattern"
+			id: "3FDD59CD9D80B960"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2334BC8E855823A0"
+				table_id: 3932730223930702446L
+				type: "loot"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					count: 64L
+					id: "4D7E0073F3417110"
+					item: "refinedstorage:pattern"
+					type: "item"
+				}
+				{
+					id: "7F164FA2D657A828"
+					item: "refinedstorage:pattern_grid"
+					type: "item"
+				}
+				{
+					id: "358CB393655776A0"
+					item: "refinedstorage:crafter_manager"
+					type: "item"
+				}
+				{
+					id: "6FB785C9D297A517"
+					item: "refinedstorage:crafting_monitor"
+					type: "item"
+				}
+				{
+					id: "35068F24B6AF8182"
+					item: "refinedstorage:crafter"
+					type: "item"
+				}
+			]
+			title: "クラフトの自動化"
+			x: 0.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["13FDDE99B062B15E"]
+			description: ["　Refined Storageネットワークでは、液体を管理することもできます。外部ストレージやディスクドライブ等の機械は、&cアイテムモードと流体モードが変更可能&rなため、必要に応じて切り替えを行ってください。"]
+			icon: "refinedstorage:4096k_fluid_storage_disk"
+			id: "58CCC9F9FE95C095"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D50CA9E202EAC46"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "68F5A92A1FA0AEB2"
+					item: "refinedstorage:fluid_grid"
+					type: "item"
+				}
+				{
+					id: "22EB4C5B0131D582"
+					item: "refinedstorage:4096k_fluid_storage_disk"
+					type: "item"
+				}
+			]
+			title: "流体も扱える"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3FDD59CD9D80B960"]
+			description: ["　&9Extra Storage&rにより、&6クラフター&rの上位版が利用可能です。パターンのスロット数や加工速度が上昇しています。"]
+			icon: "extrastorage:diamond_crafter"
+			id: "0EEE61337FC59580"
+			rewards: [{
+				id: "4C4922F1AFF1CD3E"
+				item: "extrastorage:netherite_crafter"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "23A13F75C2B19514"
+					item: "extrastorage:iron_crafter"
+					type: "item"
+				}
+				{
+					id: "5DE2A7145ADAEEE5"
+					item: "extrastorage:gold_crafter"
+					type: "item"
+				}
+				{
+					id: "7983E8EB5D783F6A"
+					item: "extrastorage:diamond_crafter"
+					type: "item"
+				}
+			]
+			title: "&6爆速クラフト"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6C18B4210AB42EED"]
+			description: [
+				"　&6スピードアップグレード&rは、クラフターのクラフト速度やインポーターの搬入速度など、機械の稼働速度を向上させるのに使用できます。"
+				""
+				"　&6スタックアップグレード&rでは、アイテムや液体の搬入出等が1スタックまとめて行われるようになり、輸送速度が向上します。"
+				""
+				"　&6クラフティングアップグレード&rでは、搬入出などを行う際に、倉庫にアイテムがない場合は、レシピが登録されていれば自動でクラフトを発注するようになります。"
+				""
+				"　&6レギュレーターアップグレード&rは、エクスポーターにおいて搬出先のアイテム在庫数を一定に保つために使用できます。アイテムの個数を指定するには、フィルタースロットにアイテムを入れ右クリックしてください。"
+			]
+			icon: "refinedstorage:crafting_upgrade"
+			id: "48F3A33E8B628465"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "39F70F31BD8453B7"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "137158104F408D9B"
+					item: "refinedstorage:speed_upgrade"
+					type: "item"
+				}
+				{
+					id: "39AB052B86875F3D"
+					item: "refinedstorage:stack_upgrade"
+					type: "item"
+				}
+				{
+					id: "1D2BE878CCD22924"
+					item: "refinedstorage:crafting_upgrade"
+					type: "item"
+				}
+				{
+					id: "0D6D65A04EFE21C2"
+					item: "refinedstorage:regulator_upgrade"
+					type: "item"
+				}
+			]
+			title: "強化"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["026433983382E62A"]
+			description: [
+				"　&6インポーター&rでは、チェストなどからアイテム/液体をネットワークに取り込むことができます。ブラックリスト/ホワイトリストのフィルター設定が可能です。"
+				""
+				"　&6エクスポーター&rでは、逆にネットワークからチェストなどへアイテム/液体を吐き出すことができます。ホワイトリストのフィルターが設定できますが、ブラックリストには変更できません。"
+			]
+			icon: "refinedstorage:importer"
+			id: "6C18B4210AB42EED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "000560A62BD6F3BB"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "56B42BF9E4611FAB"
+					item: "refinedstorage:importer"
+					type: "item"
+				}
+				{
+					id: "6D2026B265040ED3"
+					item: "refinedstorage:exporter"
+					type: "item"
+				}
+			]
+			title: "アイテムの搬入出"
+			x: 3.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["6C18B4210AB42EED"]
+			description: ["　&9Extra Storage&rにより、インポーター/エクスポーターの上位版が用意されています。"]
+			icon: "extrastorage:advanced_importer"
+			id: "16FDEBFD2C967A19"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E126992A56FC3F0"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "7A2A93F15B643B7A"
+					item: "extrastorage:advanced_importer"
+					type: "item"
+				}
+				{
+					id: "50DEB01EA2F745E7"
+					item: "extrastorage:advanced_exporter"
+					type: "item"
+				}
+			]
+			title: "高速搬入出"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6C18B4210AB42EED"]
+			description: ["　&9Cable Tiers&rにより、インポーター/エクスポーターの強力な上位版が用意されています。"]
+			icon: "cabletiers:ultra_importer"
+			id: "2C7F3E012CE03335"
+			rewards: [
+				{
+					id: "62EFF543087888C9"
+					item: "cabletiers:creative_importer"
+					type: "item"
+				}
+				{
+					id: "2F667F94F35BE6D2"
+					item: "cabletiers:creative_exporter"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "5B2E694C88C7EF33"
+					item: "cabletiers:elite_importer"
+					type: "item"
+				}
+				{
+					id: "0B4843253D5DDF49"
+					item: "cabletiers:ultra_importer"
+					type: "item"
+				}
+				{
+					id: "684F5C86D02A125F"
+					item: "cabletiers:elite_exporter"
+					type: "item"
+				}
+				{
+					id: "25377ED55089B6ED"
+					item: "cabletiers:ultra_exporter"
+					type: "item"
+				}
+			]
+			title: "&6爆速搬入出"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["026433983382E62A"]
+			description: [
+				"　&6コンストラクター&rは、RS倉庫から指定したブロックを設置する際に使用できます。"
+				""
+				"　また&6ディストラクター&rはその逆で、ブロックを破壊してRS倉庫に取り込む際に使用できます。"
+			]
+			icon: "refinedstorage:constructor"
+			id: "06A71C8DE753E7DC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D65E8459AD068EF"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "4A16A52932CEF5A6"
+					item: "refinedstorage:constructor"
+					type: "item"
+				}
+				{
+					id: "6FBB5D66C0D044CA"
+					item: "refinedstorage:destructor"
+					type: "item"
+				}
+			]
+			title: "設置と破壊"
+			x: 0.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["06A71C8DE753E7DC"]
+			description: ["　&9Cable Tiers&rにより、コンストラクター/ディストラクターの強力な上位版が用意されています。"]
+			icon: "cabletiers:ultra_constructor"
+			id: "068F467DB0BA8567"
+			rewards: [
+				{
+					id: "00008BCA6FB0ADF7"
+					item: "cabletiers:creative_constructor"
+					type: "item"
+				}
+				{
+					id: "66B05089B9719A47"
+					item: "cabletiers:creative_destructor"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "0BFF8685B64F5E48"
+					item: "cabletiers:elite_constructor"
+					type: "item"
+				}
+				{
+					id: "21EA45DBC4896E5E"
+					item: "cabletiers:ultra_constructor"
+					type: "item"
+				}
+				{
+					id: "03D8C3E4975B2C33"
+					item: "cabletiers:elite_destructor"
+					type: "item"
+				}
+				{
+					id: "09657CEE1B26E98C"
+					item: "cabletiers:ultra_destructor"
+					type: "item"
+				}
+			]
+			title: "&6爆速設置・破壊"
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["06A71C8DE753E7DC"]
+			description: [
+				"　前述の&6クラフティングアップグレード&rでは、ブロックの設置時に、倉庫にアイテムがない場合は、レシピが登録されていれば自動でクラフトを発注するようになります。"
+				""
+				"　&6シルクタッチアップグレード&rでは、ディストラクターがシルクタッチとして機能するようになります。"
+				""
+				"　また、&6幸運アップグレード&rでは、ディストラクターに幸運の効果を付与します。"
+			]
+			icon: "refinedstorage:silk_touch_upgrade"
+			id: "0C92CF18072B74A1"
+			rewards: [
+				{
+					id: "3195D5F5BBBF4658"
+					item: "refinedstorage:silk_touch_upgrade"
+					type: "item"
+				}
+				{
+					id: "3DF57061BFBF9802"
+					item: "refinedstorage:fortune_3_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "62EC970DEB96EC56"
+				title: "OK"
+				type: "checkmark"
+			}]
+			title: "ラッキー！"
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3FDD59CD9D80B960"]
+			description: [
+				"　パターンを&6加工&rモードで登録すると、クラフト発注時にクラフターの上面(模様の矢印の方向)に設置された機械やチェスト等へ材料が搬入されるようになります。これはクラフトでは行えない&9Create&rなどでの加工を自動化したい際に有用です。なお、完成品は&cインポーター等を用いて&r自動回収する必要があります。"
+				"{image:starterquestofcreate:textures/steak_fan_smoking_move_items.png width:918 height:462 align:1 fit:true}"
+				"{image:starterquestofcreate:textures/steak_in_crafter.png width:960 height:600 align:1 fit:true}"
+			]
+			icon: "refinedstorage:crafter"
+			id: "477D8369FD0C3959"
+			rewards: [{
+				id: "67063E0ACC41365A"
+				item: "compact_storage:compact_barrel_white"
+				type: "item"
+			}]
+			tasks: [{
+				id: "500E9D6C77864995"
+				title: "OK"
+				type: "checkmark"
+			}]
+			title: "機械も自動化できる"
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["13FDDE99B062B15E"]
+			description: [
+				"　RS倉庫からある程度離れていても無線でアクセスできるようにしましょう。"
+				""
+				"　&6ワイヤレス送信機&rは、&6ワイヤレスグリッド&r系のアイテムでRS倉庫に無線アクセスできるようにするための機械です。"
+				""
+				"　&6Wireless Universal Grid&rは、ワイヤレスグリッドとワイヤレス流体グリッド、&9Refined Storage Addons&rのワイヤレスクラフティンググリッドを1アイテムに統合したアイテムです。コントローラーやワイヤレス送信機に&6Shift&r+&6右クリック&rすることで登録可能です。左上のボタンから種類を切り替えられます。"
+				""
+				"　ワイヤレス系アイテムは稼働にエネルギーを必要とします。必要に応じてバックパックから充電を行ってください。"
+			]
+			icon: "refinedstorage:wireless_transmitter"
+			id: "19947837290BD893"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "76D4741A46413BAC"
+				table_id: 3932730223930702446L
+				type: "loot"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "73F420816B0C2802"
+					item: "refinedstorage:wireless_transmitter"
+					type: "item"
+				}
+				{
+					id: "204CC4513A5CF557"
+					item: "universalgrid:wireless_universal_grid"
+					type: "item"
+				}
+				{
+					id: "6986F49372D2EDA6"
+					item: "refinedstorage:wireless_crafting_monitor"
+					type: "item"
+				}
+			]
+			title: "無線化"
+			x: 4.5d
+			y: 0.75d
+		}
+		{
+			dependencies: ["19947837290BD893"]
+			description: [
+				"　&9RSInfinityBooster&rの&6Infinity Range Booster&rを使用すれば、大きな電力消費と引き換えにそのディメンション内であればどこでもWireless系アイテムを用いてRS倉庫にアクセスできるようになります。"
+				""
+				"　また、代わりに&6Dimension Card&rを使用すれば、電力消費はさらに増加しますが、&b別ディメンションを含むすべての場所&rでWireless系アイテムでのRS倉庫へのアクセスが可能となります。"
+			]
+			icon: "rsinfinitybooster:dimension_card"
+			id: "4A52CC3C1B8EC0EC"
+			rewards: [{
+				count: 2
+				id: "7969F0371325250D"
+				item: "minecraft:netherite_block"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "60135AB604E9B801"
+					item: "rsinfinitybooster:infinity_card"
+					type: "item"
+				}
+				{
+					id: "360C5D66329B29D9"
+					item: "rsinfinitybooster:dimension_card"
+					type: "item"
+				}
+			]
+			title: "&6どこでも倉庫"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["19947837290BD893"]
+			description: ["　&6レンジアップグレード&rを使用すれば、ワイヤレス送信機の有効範囲を広げることができます。"]
+			id: "749D634FF1DB337B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "769F84689AA4D98C"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			tasks: [{
+				count: 4L
+				id: "35517A394924AC6D"
+				item: "refinedstorage:range_upgrade"
+				type: "item"
+			}]
+			title: "ワイヤレス送信機用のアップグレード"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["19947837290BD893"]
+			dependency_requirement: "one_completed"
+			description: ["　&6ネットワーク送信機&r及び&6ネットワーク受信機&rを使用すれば、他の場所でもネットワークにアクセスできるようになります。使用するにはネットワークカードが必要です。ワイヤレス送信機とは異なり、距離は無制限で、ディメンションをまたぐこともできます。"]
+			icon: "refinedstorage:network_transmitter"
+			id: "2F587EFE6FCA3336"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "64D844DA63C826DB"
+				table_id: 3932730223930702446L
+				type: "loot"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7385594A7B86D6D6"
+					item: "refinedstorage:network_transmitter"
+					type: "item"
+				}
+				{
+					id: "3BA1A45CF44C5F34"
+					item: "refinedstorage:network_receiver"
+					type: "item"
+				}
+				{
+					id: "07EFFF4832E1A6AD"
+					item: "refinedstorage:network_card"
+					type: "item"
+				}
+			]
+			title: "&6RS倉庫を他の場所でも"
+			x: 6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["709AB563A09CB1BD"]
+			description: ["　&9Cable Tiers&rにより、ディスクマニピュレーターの強力な上位版が用意されています。"]
+			icon: "cabletiers:ultra_disk_manipulator"
+			id: "5C14703F7F356C1C"
+			rewards: [{
+				id: "7F627FF4DF27A388"
+				item: "cabletiers:creative_requester"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1045AC7D9961D8D5"
+					item: "cabletiers:elite_disk_manipulator"
+					type: "item"
+				}
+				{
+					id: "5E6BB63159F647E5"
+					item: "cabletiers:ultra_disk_manipulator"
+					type: "item"
+				}
+			]
+			title: "&6爆速データ移行"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["709AB563A09CB1BD"]
+			description: ["　&9Cable Tiers&rにより、Requesterの強力な上位版が用意されています。"]
+			icon: "cabletiers:ultra_requester"
+			id: "548711E70D5BCCA3"
+			rewards: [{
+				id: "198EBD8F1793CCBE"
+				item: "cabletiers:creative_requester"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "68A6DF7FAC1A3155"
+					item: "cabletiers:elite_requester"
+					type: "item"
+				}
+				{
+					id: "18B7313CFA689D17"
+					item: "cabletiers:ultra_requester"
+					type: "item"
+				}
+			]
+			title: "&6爆速補充"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["026433983382E62A"]
+			description: ["　&6任意のブロック&rと鉄塊をクラフトすることで、&6カバー&rを作成できます。ケーブルや配線系の機械を隠すのに有用です。"]
+			id: "0521E03EF1D1EE03"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "612EC0FC1CD07DDC"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			tasks: [{
+				id: "752515FA589AB941"
+				item: {
+					Count: 1b
+					id: "refinedstorage:cover"
+					tag: {
+						Item: {
+							Count: 1b
+							id: "minecraft:stone_bricks"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "ケーブルを隠そう"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["026433983382E62A"]
+			dependency_requirement: "one_completed"
+			description: [
+				"　&6検出器&rは、指定アイテムのネットワークにおける在庫数によってレッドストーン信号を出力する機械です。"
+				""
+				"　&6セキュリティマネージャー&rと&6セキュリティカード&rでは、アクセス権等のセキュリティ設定が行なえます。&m&8シングルプレイならいらない&r"
+				""
+				"　&6インターフェース&rは、アイテムの搬入出が行える、インポーター/エクスポーターのブロック版です。"
+				""
+				"　&6リレー&rは、ケーブルの亜種で、RS信号で接続/切断が行なえます。"
+				""
+				"　&6ディスクマニピュレーター&rでは、ディスクからネットワークへアイテムデータの移動が行なえます。古いディスクからデータを移す際に便利でしょう。"
+				""
+				"　&9RSRequestify&rの&6Requester&rを用いれば、アイテムが指定数を下回ったときにクラフトを発注し、在庫を一定数に保つことができます。"
+			]
+			icon: "refinedstorage:detector"
+			id: "709AB563A09CB1BD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E96A24EBCC0EDE0"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "1B5D7FACF1219D71"
+					item: "refinedstorage:detector"
+					type: "item"
+				}
+				{
+					id: "7EE1C57FFA4785CC"
+					item: "refinedstorage:security_manager"
+					type: "item"
+				}
+				{
+					id: "1453F8C6055B1702"
+					item: "refinedstorage:security_card"
+					type: "item"
+				}
+				{
+					id: "19A1130B77A73C48"
+					item: "refinedstorage:interface"
+					type: "item"
+				}
+				{
+					id: "7182BF14B2D79FC7"
+					item: "refinedstorage:fluid_interface"
+					type: "item"
+				}
+				{
+					id: "4ABFBFA59F5034B4"
+					item: "refinedstorage:relay"
+					type: "item"
+				}
+				{
+					id: "7C85204EA48757B8"
+					item: "refinedstorage:disk_manipulator"
+					type: "item"
+				}
+				{
+					id: "52B6ED603F9B2F54"
+					item: "rsrequestify:requester"
+					type: "item"
+				}
+			]
+			title: "その他のアイテムたち"
+			x: 3.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["026433983382E62A"]
+			description: [
+				"　&6フィルター&rは、グリッド系の機械に設定可能なフィルター用アイテムです。ホワイトリスト/ブラックリストでの設定や、MOD別でのフィルターが行なえます。"
+				""
+				"　また、フィルターではアイコン&7(JEIからドラッグアンドドロップ)&r及び名前を指定でき、これらを設定してからグリッド系アイテム右上の&6アップグレードスロット&rに挿入すると、&bグリッドにタブが追加され&r、そのタブでフィルターが反映されるようになります。よく使うアイテムやMODがあれば登録しておくと便利でしょう。"
+			]
+			id: "39807C647D94DAD6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "65ADE5F3BCFD38B3"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			tasks: [{
+				id: "574E7BDEF623B6F0"
+				item: "refinedstorage:filter"
+				type: "item"
+			}]
+			title: "お気に入りタブ"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["13FDDE99B062B15E"]
+			description: ["　&9Extra Storage&rにより、上位ディスクが4種類追加されています。"]
+			id: "2F54D4C39D9E2B4D"
+			rewards: [{
+				id: "78E6035A9B591560"
+				item: "extrastorage:disk_16384k"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "04AED973DCE13E7E"
+				item: "extrastorage:disk_1024k"
+				type: "item"
+			}]
+			title: "&6クソデカディスク"
+			x: 3.0d
+			y: 2.0d
+		}
+	]
+	title: "エネルギーとデジタル倉庫"
+}

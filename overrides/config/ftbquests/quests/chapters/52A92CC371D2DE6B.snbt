@@ -1,0 +1,155 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	disable_toast: true
+	filename: "52A92CC371D2DE6B"
+	group: ""
+	hide_quest_details_until_startable: true
+	icon: "minecraft:diamond"
+	id: "52A92CC371D2DE6B"
+	order_index: 3
+	quest_links: [
+		{
+			id: "6EC62B9F0C5B430E"
+			linked_quest: "42E6DEE67DBBE541"
+			shape: "rsquare"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			id: "6D72AA4EC92431A1"
+			linked_quest: "0D21794DE735B366"
+			shape: "rsquare"
+			x: -1.5d
+			y: -2.5d
+		}
+	]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["42E6DEE67DBBE541"]
+			description: ["　&6Diamond Crafter&rを8個消費してエリトラを入手することができます。Refined Storage倉庫でクラフトを自動化しておくと良いでしょう。このクエストは何度でも受けることができます。"]
+			icon: {
+				Count: 1b
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "33D1F541F3326920"
+			optional: true
+			rewards: [{
+				id: "71C06D3A8B869CA2"
+				item: {
+					Count: 1b
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "5C90A827D57F8DB7"
+				item: "extrastorage:diamond_crafter"
+				type: "item"
+			}]
+			title: "&bエリトラ交換機"
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0D21794DE735B366"]
+			description: ["　&6魂の焚き火&rを32個消費してウィザースケルトンの頭蓋骨を入手することができます。このクエストは何度でも受けることができます。"]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "3E75D7A567D4D09E"
+			optional: true
+			rewards: [{
+				id: "3BFE774689E6846F"
+				item: "minecraft:wither_skeleton_skull"
+				random_bonus: 1
+				team_reward: true
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "524F76BC0524D54F"
+				item: "minecraft:soul_campfire"
+				type: "item"
+			}]
+			title: "&bウィザスケヘッドガチャ"
+			x: -0.25d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0D21794DE735B366"]
+			description: ["　大量の肉と少々の魔法で村人を錬成できます。"]
+			icon: "minecraft:villager_spawn_egg"
+			id: "6C188751AA07BABD"
+			optional: true
+			rewards: [{
+				id: "4492A649BF25E7C8"
+				item: "minecraft:villager_spawn_egg"
+				team_reward: true
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					count: 32L
+					id: "07CCD08D312DD32C"
+					item: "minecraft:chicken"
+					type: "item"
+				}
+				{
+					id: "1B08A7E7E2BA289C"
+					item: {
+						Count: 1b
+						id: "waystones:warp_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&b村人錬成"
+			x: -0.25d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0D21794DE735B366"]
+			description: ["　&6魂の焚き火&rを32個消費してウィザースケルトンの頭蓋骨を入手することができます。このクエストは何度でも受けることができます。"]
+			icon: "minecraft:nether_star"
+			id: "776434DBAFA3CC34"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6C167EB8F62F7051"
+				table_id: 3932730223930702446L
+				team_reward: true
+				type: "loot"
+			}]
+			size: 1.5d
+			tasks: [{
+				count: 32L
+				id: "114E1CD2E87DFD2D"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "&bレアアイテムガチャ"
+			x: -0.25d
+			y: -1.0d
+		}
+	]
+	title: "&6アイテム交換所"
+}

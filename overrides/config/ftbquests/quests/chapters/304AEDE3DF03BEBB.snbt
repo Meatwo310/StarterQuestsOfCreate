@@ -1,0 +1,669 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "304AEDE3DF03BEBB"
+	group: ""
+	icon: "create:mechanical_arm"
+	id: "304AEDE3DF03BEBB"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["701B8D7A8D312D6A"]
+			description: [
+				"　Createでより高度なアイテムを得るには、&6ブレイズバーナー&rを熱源とした加工を行う必要があります。そのため、ネザー要塞を見つけてブレイズを&6空のブレイズバーナー&rで捕獲しましょう。&7ちなみにブレイズスポナーはCarry Onで輸送できます。&r"
+				""
+				"　&6Explorer's Compass&rを用いれば、ネザー要塞や任意の構造物を簡単に見つけられます。"
+				""
+				"　ネザー要塞は&9Yung's Better Nether Fortresses&rによって、またその他ダンジョンも&9Yung's&r系MODによって改変されています。強力な装備で挑みましょう。&9create: things and misc&r製の&6Sticky Boots&rを使用すると、スニーク中の跳躍力が強化されるため、有効活用してください。"
+				""
+				"　ブレイズは&bブレイズスポナーから直接&r捕獲可能です。&7(スポナーからブレイズが消えることはありません。)&r詳細は空のブレイズバーナーの思案画面を確認してください。"
+			]
+			icon: "create:blaze_burner"
+			id: "6DAE62D39EF9B260"
+			rewards: [{
+				id: "1764C040B63A5920"
+				item: {
+					Count: 1b
+					id: "create_things_and_misc:blaze_balloon_fire"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "0DB8814E24AEA9AC"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "109391732BEE8A56"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "ブレイズを捕まえよう"
+			x: -1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["6DAE62D39EF9B260"]
+			description: ["　手に入れた&6ブレイズバーナー&rと、&6鉢&rと&6メカニカルミキサー&rを用いて&6銅&rと&6亜鉛&rを混ぜ合わせ、&6真鍮(しんちゅう)インゴット&rを作成しましょう。ブレイズバーナーには適当な燃料を与える必要があります。"]
+			icon: "create:brass_ingot"
+			id: "633E0F3B6A10D878"
+			rewards: [{
+				count: 64
+				id: "52B56F78DD1FC817"
+				item: "create:brass_ingot"
+				random_bonus: 64
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5084405892889D9A"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "4EC2AE7F8E51DCF2"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5A446562BD9EE444"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "144E12D9C56D4763"
+					item: "create:brass_casing"
+					type: "item"
+				}
+			]
+			title: "強力な合金"
+			x: 0.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["633E0F3B6A10D878"]
+			description: ["　&6電子管&rは、より高性能な機械を制作するために必要なアイテムです。ローズクォーツを磨くには、オフハンドに紙やすりを持って&6右クリック&rを長押ししてください。"]
+			icon: "create:electron_tube"
+			id: "26E31D4A3D272725"
+			rewards: [
+				{
+					id: "5F6C008871E09044"
+					item: {
+						Count: 1b
+						id: "createaddition:diamond_grit_sandpaper"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "5A3BC74C609B0188"
+					item: "create:rose_quartz"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5C4F37D8E035DB83"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:sandpaper"
+						}
+					}
+					title: "Any #create:sandpaper"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7DD76AF917E82521"
+					item: "create:electron_tube"
+					type: "item"
+				}
+			]
+			title: "賢い機械に必要"
+			x: 1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["26E31D4A3D272725"]
+			description: [
+				"　&6メカニカルクラフター&rは、プレイヤーが行うクラフトを自動化することができる機械です。また、&bメカニカルクラフターでしか制作できない特殊なクラフト&rが行えます。"
+				""
+				"　それぞれのクラフターの向きは考慮され、最終的に一箇所に集約して外に出るようにしなければなりません。"
+				""
+				"　すべての枠が埋まるとクラフトが開始されます。開けたままにしておきたいスロットは&6スロットカバー&rで埋めておくことができます。レッドストーン信号を与えることでもクラフトを強制的に開始できます。"
+			]
+			id: "4C24B4EF094D87B2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4782C59C543B8BB1"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			tasks: [{
+				count: 21L
+				id: "14DB823C7E704632"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "大規模なクラフト"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1F7D73A79CE583E7"]
+			description: [
+				"　&6デプロイヤー&rは、プレイヤーの右クリック/左クリックの動作を代行できる機械です。動力を与えるか、&6からくり&rに組み込むことで、搬入されたアイテムの使用を繰り返します。"
+				""
+				"　&6精密機械&rなど一部のアイテムを作成する際に、複数台必要となります。"
+			]
+			id: "180DAFE0D85138EE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "274A3555B00388D0"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				count: 3L
+				id: "19003AE0D441A908"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "AIの手"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["4C24B4EF094D87B2"]
+			description: [
+				"　&6破砕ホイール&rは、強力な&6破砕&rができる機械で、&6メカニカルクラフター&rを用いてクラフトします。"
+				""
+				"　石臼と同じ加工が行えますが、破砕ホイールは鉱石ブロックや原石の加工、砂の作成などにも用いることができます。また、石臼とは違い、スタック単位での加工が可能です。"
+				""
+				"　間違ってプレイヤーが処理されないよう、シュートやファンネルを上下(または前後左右)に設置しておくとよいでしょう。"
+				"{image:starterquestofcreate:textures/crushing_wheel.png width:960 height:600 align:1 fit:true}"
+			]
+			id: "269857D667B4203D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33843D93071F3B8D"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2E6AEF4A744B8064"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "巻き込み事故には気をつけよう"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["180DAFE0D85138EE"]
+			description: ["　&6精密機械&rは、デプロイヤーで&6金板&rに&6歯車&rと&6大きな歯車&rと&6鉄塊&rを5回使用することで作成できます。なお、作成時に確率で失敗し、別のアイテムに変化してしまいます。"]
+			id: "599A4046CA95F182"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3B61E147E8B09176"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "5519D87FDC72E8B1"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "精密機械を作ろう"
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["26E31D4A3D272725"]
+			description: [
+				"　&6真鍮ファンネル&rは、従来のファンネルにフィルター機能が付き、搬入出が一度に64個まで行えるようになった高性能な機械です。"
+				""
+				"　&6真鍮トンネル&rは、アイテムを分配・仕分けできる機械です。非常に高機能なため思案画面に目を通しておくことを強く推奨します。"
+				""
+				"　&6リストフィルター&rは、ファンネル等のフィルタースロットに使用でき、複数アイテムの指定やブラックリスト・ホワイトリストなどの指定が可能なアイテムです。"
+			]
+			icon: "create:brass_funnel"
+			id: "1F7D73A79CE583E7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "35FCD706167F4180"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "19A77FFE3E9B3C2E"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "0AD731C5AFC508F5"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+				{
+					id: "2B3DDE7D54356338"
+					item: "create:filter"
+					type: "item"
+				}
+			]
+			title: "物流制御"
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["288F7D963F99DE57"]
+			description: [
+				"　ふるい分け機を強化して、前章で作成した金属工場を効率化しましょう。"
+				""
+				"　&6Brass Sifter(真鍮のふるい分け機)&rと&6Advanced Brass Mesh(発展的な真鍮のメッシュ)&rで砂利をふるうと、宝石類や砕かれた原石を大量に生産することができます(ダイヤモンドの代わりに石炭が必要な場合は、通常のふるい分け機/真鍮メッシュを使用してください)。砕かれた鉱石は仕分けて、精錬または洗浄を行ってください。"
+				""
+				"(作成例はテストワールドをご覧ください)"
+				"{image:starterquestofcreate:textures/sifter_advanced.png width:16 height:10 align:1 fit:true}"
+				"{image:starterquestofcreate:textures/sifter_advanced_drawer.png width:16 height:10 align:1 fit:true}"
+				"{image:starterquestofcreate:textures/sifter_advanced_processing.png width:16 height:10 align:1 fit:true}"
+			]
+			icon: "createsifter:sifter"
+			id: "0FDD389858A05328"
+			rewards: [
+				{
+					id: "78F1ECA27AF8009A"
+					item: "storagedrawers:controller"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "4F13E2119DEA0CA4"
+					item: "storagedrawers:compacting_drawers_3"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1358D37AF0CE48E3"
+					table_id: 3932730223930702446L
+					type: "loot"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "004BCC5500B7C1FE"
+					item: "createsifter:brass_sifter"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5A31A29E99EAB1C5"
+					item: "createsifter:advanced_brass_mesh"
+					type: "item"
+				}
+			]
+			title: "&6ふるいを強化しよう&r"
+			x: 12.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["599A4046CA95F182"]
+			description: [
+				"　&6メカニカルアーム&rは、特定の場所から別の場所へアイテムを移動できる機械です。&6ブレイズバーナー&rへの燃料補給や、&6鉢&rへのアイテム搬入などに使われる非常に万能な機械です。直接チェスト等から搬入出は行えないため、ファンネルやデポを経由する必要があります。"
+				""
+				"　&6重量射出機&rは、指定した直線上の場所までアイテムを山なりに射出する機械です。高い場所への搬入や、機械をまたいだアイテム輸送の際に有用です。"
+			]
+			icon: "create:mechanical_arm"
+			id: "7A6F93216A16268D"
+			rewards: [
+				{
+					id: "761A8B1B5A96028A"
+					item: "minecraft:jukebox"
+					type: "item"
+				}
+				{
+					id: "7CDFD70787791AAF"
+					item: "minecraft:music_disc_otherside"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "34735AAFC107A5CE"
+					item: "create:mechanical_arm"
+					type: "item"
+				}
+				{
+					id: "65BA6B98D6952B50"
+					item: "create:weighted_ejector"
+					type: "item"
+				}
+			]
+			title: "乱用はスパゲッティ工場のもと"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["599A4046CA95F182"]
+			description: ["　&6回転速度コントローラー&rは、動力の回転速度を正確に設定できる、非常に有用な機械です。歯車を組み合わせるよりコンパクトです。"]
+			id: "33AFAD342EEC4FE5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A585383A5F8B15C"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "70F1CF9A3BB26D6B"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			title: "回転速度を思いのままに"
+			x: 7.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"15A4D6E186713F44"
+				"43700776DBC4F5CD"
+			]
+			description: [
+				"　&6蒸気エンジン&rは、風車や水車よりも高出力な原動機です。稼働には&6液体タンク&rと&6水&r、&6熱源&r、&6蒸気エンジン&rブロックが必要です。"
+				""
+				"　蒸気エンジンでは、&6容量レベル&r、&6水量レベル&r、&6熱量レベル&rの3種の最低値が&6エンジンレベル&rとなります。蒸気エンジン1機の許容応力は、&bレベルx16,384&rSUです。具体的には、エンジンのレベルが9の場合、許容応力は&b147,456&rSUとなります。"
+				""
+				"　&6容量レベル&rは、設置した&6液体タンク&rの数によって変化します。タンクは1x1x1から3x3の大きさで設置可能で、&bタンク4個につき1レベル&rとなります。例えば、3x3x4&7(=36)&rのタンクの場合は、容量レベルは&b9&rとなります。"
+				""
+				"　&6水量レベル&rは、タンクへの水の搬入速度によって変化します。&b10mb/t&7(1tickあたり0.01バケツ)&r&bの搬入につき水量レベルは1&rとなります。"
+				""
+				"　&6熱源レベル&rは、設置した&6ブレイズバーナー&rの数と強さによって変化します。&6メカニカルアーム&r等でかまど燃料を与えたブレイズバーナーは、&b1つあたり1レベル&rとなります。焚き火や燃料を与えていないブレイズバーナーなどは、何個設置しても&c熱源レベル最小&rとなります。&6ブレイズケーキ&rを与えて過熱状態にした場合は、&b1つあたり2レベル&rとなります。"
+				""
+				"　蒸気エンジンから動力を得るには、&6蒸気エンジン&rブロックを設置し、シャフトを取り付けます。シャフトの回転方向は側面から変更可能です。"
+				""
+				"(作成例はテストワールドをご覧ください)"
+				"{image:starterquestofcreate:textures/steam_engine.png width:960 height:600 align:1 fit:true}"
+				""
+				"　"
+			]
+			icon: "create:steam_engine"
+			id: "288F7D963F99DE57"
+			rewards: [{
+				count: 16
+				id: "48B935A87FD69C78"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				count: 9L
+				id: "288C5E4D8B9D5DCC"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "最強の原動機"
+			x: 10.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["33AFAD342EEC4FE5"]
+			description: [
+				"　&6液体パイプ&rや&6メカニカルポンプ&rを用いて液体を輸送できます。液体の輸送速度はメカニカルポンプに与える動力の回転速度に依存し、距離は&c回転速度に関わらず&r16ブロック先です。これらを用いればワールドの液体を吸い取ることができます。(例:無限水源から水を得る)"
+				""
+				"　&6液体タンク&rは、大量の液体を貯蔵できるマルチブロック型のブロックで、最大3x3x32ブロックまでの大きさで設置可能です。"
+				""
+				"　&6スマート液体パイプ&rはフィルター機能つきの液体パイプで、流れる液体の制限ができます。"
+				""
+				"　&6液体バルブ&rを用いれば、回転力で開閉できるバルブで液体の輸送を止めることができます。"
+				""
+				"　&6バルブハンドル&rは、設定した角度の分だけ正確に回転力を出力できる機械です。バルブハンドルの開け締めや、精密な角度調整に使用します。"
+				""
+				"　&6ホースプーリー&rは大規模な液体の吸入や放出に用いられます。液体パイプとは違い、液体を完全に吸い尽くす/埋め尽くすことができます。ただし、吸入元/放出先の液体が非常に大きい場合は、ワールドに変化を与えることなく、無限に汲み出し/放出が行なえます。これを用いれば、ネザーで溶岩を無限化できます。"
+				""
+				"　&6アイテム廃液口&rはバケツやポーションの液体を取り出すために用いられます。"
+				""
+				"　&6アイテム注液口&rは廃液口の逆で、バケツやポーションに液体を注入するときに用いられます。"
+			]
+			icon: "create:fluid_pipe"
+			id: "15A4D6E186713F44"
+			rewards: [{
+				count: 64
+				id: "074347626C57F162"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					count: 32L
+					id: "4896DBEF7AEC05E4"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "61DEAE39BBB813BF"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "1CF984AF52592E96"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			title: "混ぜるな危険"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33AFAD342EEC4FE5"]
+			description: [
+				"　原木を回収し、木炭に加工する施設を作成しましょう。"
+				""
+				"　今回はからくりを作成します。使用できる機械はいくつかありますが、&6トロッコアセンブラ&rや&6メカニカルベアリング&r、&6風車ベアリング&rなどを用いるのが良いでしょう。"
+				""
+				"　木の伐採には&6メカニカルソー&rを用います。&7この機械は木材や石材の加工にも使用できます。&r"
+				""
+				"　苗木は&6デプロイヤー&rを用いて植え直す必要があります。フィルタースロットに苗木を設定すると、原木が設置されるのを防止できます。"
+				""
+				"　得たアイテムは、からくり内のバレル等で一時保管し、&6ポータブルストレージインターフェース&rで取り出し、真鍮ファンネルやDrawer Controllerで仕分けます。"
+				""
+				"　原木はファンを用いて精錬し、Drawer等に保管します。"
+				""
+				"(作成例はテストワールドをご覧ください)"
+				"{image:starterquestofcreate:textures/tree_farm.png width:16 height:10 align:1 fit:true}"
+			]
+			icon: "create:mechanical_saw"
+			id: "43700776DBC4F5CD"
+			rewards: [
+				{
+					count: 64
+					id: "0226F685032F3440"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 48
+					id: "6618627D54F5BEB0"
+					item: "minecraft:emerald"
+					random_bonus: 16
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "0864AEBF77687EA4"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "673C149B83B6F323"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "05D8028EAAD36A3B"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "50BA0F54A583DAE5"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+			]
+			title: "&6原木・木炭工場&r"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3E34B1B84538F48C"]
+			description: ["　より良い資源を得るために、ネザーを探索しましょう。ネザーゲートは、&9Prefab&rの&6ネザーゲート&rを用いて建設してください。"]
+			icon: "prefab:item_nether_gate"
+			id: "701B8D7A8D312D6A"
+			rewards: [
+				{
+					id: "74B2BB22AFDC272D"
+					item: "prefab:item_nether_gate"
+					type: "item"
+				}
+				{
+					id: "4A2888D8F116F190"
+					item: {
+						Count: 1b
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "75882920F3EE9DF5"
+					item: {
+						Count: 1b
+						id: "create:netherite_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5CEEEE7F7FEE43D2"
+					item: {
+						Count: 1b
+						id: "create_jetpack:netherite_jetpack"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09FF4DA80C88315B"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A02CA536566CD4C"
+					item: {
+						Count: 1b
+						id: "create:netherite_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "03EA8DA5D6ABE716"
+				item: "prefab:item_nether_gate"
+				type: "item"
+			}]
+			title: "ネザーへ行こう"
+			x: -3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"701B8D7A8D312D6A"
+				"6FC8A9B8CDBF2241"
+			]
+			description: [
+				"　魂の炎や魂の焚き火による&6憑霊気流&rはアイテムを別のアイテムに変化させるための気流です。例えば、砂を&6ソウルサンド&rに変化させたり、&6イカスミ&rを&6輝くイカスミ&rに変化させたりすることができます。"
+				""
+				"　&6ソウルサンド&rを洗浄することで、&6ネザークォーツ&rを得ることができます。"
+			]
+			icon: "minecraft:soul_campfire"
+			id: "71A36BBADE610CA4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "340A75FB813D0793"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "192BC7EF07E5BB2A"
+					item: "minecraft:soul_campfire"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "170A72B94E431223"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0FFB7CB8F2E2593F"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+			]
+			title: "憑霊加工"
+			x: -3.0d
+			y: -2.0d
+		}
+	]
+	title: "自動化の始まり"
+}

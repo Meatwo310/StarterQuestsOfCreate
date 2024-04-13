@@ -1,0 +1,34 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "hide"
+	group: "304628E910EF7418"
+	hide_quest_details_until_startable: true
+	icon: "ftbquests:book"
+	id: "0362FF386512085F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["304AEDE3DF03BEBB"]
+		description: [
+			"　&6自動化の始まり&rクリア、おめでとうございます！　ここまでのクエストを通して、CreateやMOD環境についての基礎知識は深められたでしょうか。"
+			""
+			"　ここからは、より&b自由度の高い&rクエストの選択が行なえます。ジャンルごとに章が分かれていますので、お好きなものから始めてください。"
+			""
+			"　残りの8章をすべてクリアすると、最後のクエストが表示されるようになりますので、完走を目指して頑張ってください。"
+		]
+		icon: "ftbquests:book"
+		id: "0D21794DE735B366"
+		size: 1.5d
+		tasks: [{
+			id: "3432A02EC4042B82"
+			title: "OK"
+			type: "checkmark"
+		}]
+		title: "次にやること"
+		x: -2.25d
+		y: -2.25d
+	}]
+	title: "次にやること"
+}

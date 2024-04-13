@@ -1,0 +1,374 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "29D5C265B7BBA7A3"
+	group: "304628E910EF7418"
+	icon: "farmersdelight:roast_chicken_block"
+	id: "29D5C265B7BBA7A3"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0D21794DE735B366"]
+			description: [
+				"　&9Farmer's Delight&rにより、野菜や食べ物のバリエーションが増えています。"
+				""
+				"　&6稲(米)&rは、水中でないと植えられないため注意してください。"
+				""
+				"　また&6トマト&rは、&6ロープ&rを設置しておくことで高さを伸ばすことができます。"
+			]
+			icon: "farmersdelight:rice_panicle"
+			id: "6BBA0CF41441DE39"
+			rewards: [{
+				count: 8
+				id: "302E30B07AB83FAA"
+				item: "farmersdelight:rope"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "やさしいせかい"
+			tasks: [
+				{
+					id: "2CD1A00F4E8A60C5"
+					item: "farmersdelight:cabbage"
+					type: "item"
+				}
+				{
+					id: "1D74777F718D1966"
+					item: "farmersdelight:tomato"
+					type: "item"
+				}
+				{
+					id: "7129B29BA7A2A8C7"
+					item: "farmersdelight:onion"
+					type: "item"
+				}
+				{
+					id: "2978F27AA62B10DF"
+					item: "farmersdelight:rice_panicle"
+					type: "item"
+				}
+			]
+			title: "やさいせいかつ"
+			x: -6.0d
+			y: -3.75d
+		}
+		{
+			dependencies: ["6BBA0CF41441DE39"]
+			description: ["　&6肥沃な土&rは、&6有機コンポスト&rを発酵させてできる土で、作物の成長が通常の土/耕地よりも早くなります。"]
+			icon: "farmersdelight:rich_soil"
+			id: "50266CE621839670"
+			rewards: [
+				{
+					id: "58DC62680FAB7140"
+					item: "minecraft:brown_mushroom"
+					type: "item"
+				}
+				{
+					id: "0206C94DEC060577"
+					item: "minecraft:red_mushroom"
+					type: "item"
+				}
+			]
+			subtitle: "加速土壌"
+			tasks: [
+				{
+					id: "712DB2D188B5DB8A"
+					item: "farmersdelight:organic_compost"
+					type: "item"
+				}
+				{
+					id: "2A03EDC9D6C0BA75"
+					item: "farmersdelight:rich_soil"
+					type: "item"
+				}
+			]
+			title: "時流土"
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6BBA0CF41441DE39"]
+			description: [
+				"　&6コンロ&rは食べ物を加熱調理するためのブロックで、焚き火と同じ調理が行なえますが、一度に6種類のアイテムを加工することができます。"
+				""
+				"　&6フライパン&rも食べ物を調理するためのアイテムです。焚き火やコンロの上に設置することで、一度に1種類しか調理できないかわりに1スタックまとめて調理することができます。なお、手に持って調理することができる他、&c鈍器&rとしても使用できます。"
+				""
+				"　&6鍋&rは食べ物を煮込むためのブロックです。焚き火やコンロの上に設置することで、&9Farmer's Delight&r製のアイテムをつくることができます。"
+				""
+				"　&6まな板&rは食品やその他のアイテムを切ったり剥いだりするときに使うブロックです。魚を切り身にしたり、あるいは原木から樹皮を得たりすることができます。"
+				""
+				"　フライパンと鍋は&6調理の手引き&rを与えたブレイズバーナーとも相性がよく、ブレイズバーナーの火力によって調理速度が変化します。詳細は思案画面を確認してください。"
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "2A82759E156C82E3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "753C48EC915D68C0"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			size: 1.5d
+			subtitle: "グツグツはしません"
+			tasks: [
+				{
+					id: "38E0775101EE8E18"
+					item: "farmersdelight:stove"
+					type: "item"
+				}
+				{
+					id: "57DD507B6F0022DA"
+					item: {
+						Count: 1b
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13A26BF502D18B7A"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "55DD0A58EF38B07E"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "5567846CC0DA89D7"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_central_kitchen:cooking_guide"
+					}
+					type: "item"
+				}
+			]
+			title: "一度火が入ってしまったら、スゥーーッと"
+			x: -4.5d
+			y: -3.75d
+		}
+		{
+			dependencies: ["2A82759E156C82E3"]
+			description: [
+				"　&6栄養&rバフを受けている間は、体力の回復以外で満腹度/裏満腹度が減少しなくなります。また、&6健康&rバフを受けている間は、満腹度が減っていても体力が自然再生するようになります。"
+				""
+				"　これらの食べ物のどれかを生産する工場を作成しましょう。栄養バフを得られる食べ物は、野菜のみで作成できる&6ベジタブルヌードル&rや&6スタッフドパンプキン&rがおすすめです。スタッフドパンプキンはボウルに取り分ける必要がある点に注意してください。健康バフを得られる食べ物は、&6チャーハン&rが自動化しやすいでしょう。"
+				""
+				"　キノコの無限化は、&cハーベスターはキノコを回収してしまう&rため少々複雑になります。ハーベスターの配置を工夫してキノコがなくならないようにしたり、菌糸やポドゾル&7(トウヒの成長時に生成されます)&rに植えたキノコを大きく育てて&6メカニカルソー&rで伐採したり、キノコを肥沃な土に植え、&6群生したキノコ&rをハーベスターで回収したりすると良いでしょう&7(群生したキノコは完全に成長されるまで収穫されず、収穫後はキノコに戻ることなく群生したキノコの一番低い成長段階のものに戻ります)&r。"
+			]
+			icon: "farmersdelight:roast_chicken_block"
+			id: "390149DEA6F6E7CF"
+			rewards: [{
+				id: "480EBC5150AAC390"
+				item: {
+					Count: 1b
+					id: "farmersdelight:netherite_knife"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:mending"
+								lvl: 1s
+							}
+							{
+								id: "minecraft:looting"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+							{
+								id: "farmersdelight:backstabbing"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+						]
+						RepairCost: 7
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "&o&6Go!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+			tasks: [
+				{
+					id: "6228DE8B1293CF04"
+					item: "farmersdelight:vegetable_noodles"
+					type: "item"
+				}
+				{
+					id: "329A9150D7EF67CD"
+					item: "farmersdelight:stuffed_pumpkin_block"
+					type: "item"
+				}
+				{
+					id: "67794CD447D0DF4B"
+					item: "farmersdelight:roast_chicken_block"
+					type: "item"
+				}
+				{
+					id: "248FA0619AB0BF78"
+					item: "farmersdelight:chicken_soup"
+					type: "item"
+				}
+				{
+					id: "603548B60FC1521F"
+					item: "farmersdelight:fried_rice"
+					type: "item"
+				}
+				{
+					id: "5FE468A5C0054F83"
+					item: "farmersdelight:noodle_soup"
+					type: "item"
+				}
+			]
+			title: "&o&6Let's"
+			x: -3.0d
+			y: -3.75d
+		}
+		{
+			dependencies: ["6BBA0CF41441DE39"]
+			description: [
+				"　&6ナイフ&rは、作物の回収に適したツールです。作物や雑草に使用することで&6藁(わら)&rを得ることができます。なお、&c軽量な武器&rとしても使用することができ、ブタやホグリンから&6ハム&rを得る際にも使われます。"
+				""
+				"　&6藁&rは&6ロープ&rや&6キャンバス&rを作る際に必要な繊維で、&6リード&rや&6本&rなどを通常とは異なるレシピで作成することができます。"
+			]
+			icon: "farmersdelight:straw"
+			id: "2815E448F76117DD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "304055F37A4638C9"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			subtitle: "&4＊ナイフはどこだ。"
+			tasks: [
+				{
+					id: "5D8D45B5B0186239"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "farmersdelight:tools/knives"
+						}
+					}
+					title: "Any #farmersdelight:tools/knives"
+					type: "item"
+				}
+				{
+					id: "2BC970EE3AB2754C"
+					item: "farmersdelight:straw"
+					type: "item"
+				}
+			]
+			title: "藁あるよ（笑）"
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2A82759E156C82E3"]
+			description: ["　&9Farmer's Delight&rは、様々な食べ物も追加します。調理は少し手間がかかりますが、回復量はバニラのものよりも優れています。"]
+			icon: "farmersdelight:rice_roll_medley_block"
+			id: "24910F9CE968DEE3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E25460A0FB4143E"
+				table_id: 3932730223930702446L
+				type: "random"
+			}]
+			subtitle: "やばいマジで逆に"
+			tasks: [
+				{
+					id: "1AE15246A96DAA39"
+					item: "farmersdelight:rice_roll_medley_block"
+					type: "item"
+				}
+				{
+					id: "74CD933D5826C420"
+					item: "farmersdelight:chicken_sandwich"
+					type: "item"
+				}
+				{
+					id: "355AE6367C156D05"
+					item: "farmersdelight:apple_cider"
+					type: "item"
+				}
+			]
+			title: "SUSHI食べたい"
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0D21794DE735B366"]
+			description: ["　&9Create Confectionery&r及び&9Create Factory&rで追加されるお菓子を作成しましょう。"]
+			icon: {
+				Count: 1b
+				id: "create_confectionery:full_black_chocolate_bar"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6384C448AFF01B07"
+			rewards: [{
+				count: 2048
+				id: "04A05CBEF692624F"
+				item: "create_confectionery:bar_of_ruby_chocolate"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4EAC233C277F203F"
+					item: "create_confectionery:soothing_hot_chocolate"
+					type: "item"
+				}
+				{
+					id: "2B6B1FE213B06DD4"
+					item: "create_confectionery:caramelized_marshmellow_on_a_stick"
+					type: "item"
+				}
+				{
+					id: "1C6DA4574FBEE153"
+					item: {
+						Count: 1b
+						id: "create_confectionery:full_chocolate_bar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04005493F90D1048"
+					item: "create_factory:dark_chocolate_waffle"
+					type: "item"
+				}
+				{
+					id: "3C15B4DE2D989AAC"
+					item: "create_factory:white_chocolate_roll"
+					type: "item"
+				}
+			]
+			title: "&6お菓子を作ろう"
+			x: -6.0d
+			y: -0.75d
+		}
+	]
+	title: "農業と料理"
+}

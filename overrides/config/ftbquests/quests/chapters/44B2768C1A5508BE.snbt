@@ -1,0 +1,85 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "44B2768C1A5508BE"
+	group: ""
+	icon: "create:clipboard"
+	id: "44B2768C1A5508BE"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["49FCEA142093CFC8"]
+			description: ["・初公開"]
+			disable_toast: true
+			id: "6DD9F09180CF8A45"
+			tasks: [{
+				disable_toast: true
+				icon: "create:clipboard"
+				id: "2D22A2456758072D"
+				stat: "minecraft:play_time"
+				title: "このバージョンへアップデート"
+				type: "stat"
+				value: 1
+			}]
+			title: "v1.0"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6DD9F09180CF8A45"]
+			description: [
+				"・最初の章で一度以上死亡しないと進行できない問題を修正しました"
+				"・デフォルトで同梱しているテスト用環境のワールド名を変更しました"
+				"・&9FasterLadderClimbing&rMODを追加しました"
+				"・一部のキー設定のデフォルト値が設定できていない問題を修正しました"
+			]
+			disable_toast: true
+			id: "2745F65B850B6656"
+			tasks: [{
+				disable_toast: true
+				icon: "create:clipboard"
+				id: "09EB9D96E748EBCE"
+				stat: "minecraft:play_time"
+				title: "このバージョンへアップデート"
+				type: "stat"
+				value: 1
+			}]
+			title: "v1.1"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2745F65B850B6656"]
+			description: [
+				"- 多くのMODをアップデートし、コンフィグを調整しました。"
+				"- フォントをリソパ形式のRounded Mgen+から、ModernUI形式のNoto Sans JPに変更しました。"
+				"- RubidiumをEmbeddiumに変更し、各種軽量化MODを調整しました。"
+				"- Create Armoryを削除しました"
+				"- クエストにおいて、もとのMOD名に空白を含む場合は、クエストでも空白を用いるよう変更しました。"
+			]
+			disable_toast: true
+			id: "392151620A1FE0DA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "279217BEB8ED3AF6"
+				table_id: 133561594856328009L
+				type: "loot"
+			}]
+			tasks: [{
+				disable_toast: true
+				icon: "create:clipboard"
+				id: "241ED3D150F63184"
+				stat: "minecraft:play_time"
+				title: "このバージョンへアップデート"
+				type: "stat"
+				value: 1
+			}]
+			title: "v1.2-&calpha&r"
+			x: 8.5d
+			y: -3.5d
+		}
+	]
+	title: "更新履歴"
+}

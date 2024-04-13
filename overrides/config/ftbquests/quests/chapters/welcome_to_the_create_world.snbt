@@ -1,0 +1,869 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_to_the_create_world"
+	group: ""
+	icon: "create:cogwheel"
+	id: "3E34B1B84538F48C"
+	order_index: 1
+	quest_links: [{
+		id: "0431DEBB5D61A1B4"
+		linked_quest: "71A36BBADE610CA4"
+		x: -4.5d
+		y: -2.0d
+	}]
+	quests: [
+		{
+			dependencies: ["78222F3A6C3C49DF"]
+			description: [
+				"　&9Create&rを始めましょう。基礎となるアイテムを作成してください。"
+				""
+				"　&6安山岩ケーシング&rは、原木の皮を斧で剥ぎ、安山岩合金で右クリックすることで作成できます。"
+			]
+			icon: "create:cogwheel"
+			id: "0DA4AE3A612AA986"
+			rewards: [
+				{
+					id: "6C3E1D2AFE217296"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "45B5272D7F56A133"
+					item: "create:crafting_blueprint"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 32L
+					id: "687724B5E81501BC"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "35D59E5D3D0554FB"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5072E075B0CD014D"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "04DA1ADE96130407"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+			]
+			title: "エンジニアの卵"
+			x: -9.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["6FC8A9B8CDBF2241"]
+			description: ["　&6水車&rは水流から回転力を生み出す機械です。風車よりも回転速度(&6RPM&r)が早く、低コストで量産が可能ですが、生成する回転力(&6SU&r)は弱めです。複数台連結して使用するのが良いでしょう。詳細は&6W&rキーを長押しして思案画面を確認してください。"]
+			icon: "create:water_wheel"
+			id: "5B5C6F8090D85CC6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0553D1F5D102CE45"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "31BF408A89B508A0"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					id: "52AF3E625E8C9ED6"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+			]
+			title: "水力"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6FC8A9B8CDBF2241"]
+			description: [
+				"　&6風車&rは風の力から回転力を生み出す機械です。水車よりも強い回転力(&6SU&r)を生み出せますが、コストは比較的高く、回転速度(&6RPM&r)も遅めです。詳細は&6W&rキーを長押しして思案画面を確認してください。"
+				""
+				"　なお、帆とみなされるのは&6帆&r、&6帆フレーム&r、&6羊毛&rですが、どれを使用しても効率は変化しません。"
+			]
+			icon: "create:white_sail"
+			id: "16D8EFCD1CA23AB9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4EB0FD007ACDDB19"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "3AC3FE8DCF3D721A"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "30F83540762F8F3D"
+					item: "create:white_sail"
+					type: "item"
+				}
+			]
+			title: "風力"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DA4AE3A612AA986"]
+			description: [
+				"　&9Create&rで必要不可欠な&6金属板&rを作成できる、&6メカニカルプレス&rを作成しましょう。レシピは&6R&rキーを押して&9JEI&rから確認してください。"
+				""
+				"　&9Create&rの機械やアイテムの詳細、&6思案画面&rは、カーソルを合わせて&6W&rキーを長押しすることで確認できます。また、機械アイテムにカーソルを合わせて&6U&rを押すと、大抵の場合はその機械で加工可能なアイテムを表示することができます。"
+				""
+				"　稼働させるには、プレスの側面に&6ハンドクランク&rを設置して回転させてください。詳細はメカニカルプレスの思案画面を確認してください。"
+			]
+			icon: "create:mechanical_press"
+			id: "52030436B884D260"
+			rewards: [
+				{
+					id: "0BEF0014F1774942"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "7462814D5E553BB2"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "39D909B5DD208E07"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4C7999A5C2AD4293"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "72E24EA90A00D0FF"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "499873AB921B4C96"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "7807D33B9373590A"
+					item: "create:hand_crank"
+					type: "item"
+				}
+				{
+					id: "538E3D09212F88C7"
+					item: "create:depot"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "57211A1CF08F1076"
+					item: "create:iron_sheet"
+					type: "item"
+				}
+			]
+			title: "初めての機械"
+			x: -7.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["76A485175777D3D5"]
+			description: [
+				"　速度計及び応力計を用いることで、回転速度や応力を測定できます。"
+				""
+				"　速度計は、回転速度&6RPM&rを測定するための計器で、針は回転の速さを示します。最大速度は&6256RPM&rです。"
+				""
+				"　応力計は、応力影響と許容応力を測定するための計器で、針は応力の使用率を示します。&c応力超過&rが発生した場合は、原動機を増やし許容応力を増やすか、回転速度を下げて応力影響を減らすか、&6クラッチ&rを使って未使用の機械を停止することで対処してください。"
+				""
+				"　なお、&6ゴーグル&rを装備することで、RPMやSUの数値や、その他機械の詳細情報を読み取れるようになります。本来は、ゴーグルの情報がCreate独自のオーバーレイで表示されますが、&9Create Goggles&rにより、ブロックやエンティティの情報を表示するMODである&9Jade&rに統合されて表示されます。"
+			]
+			icon: "create:speedometer"
+			id: "21FCECFDC5622050"
+			rewards: [{
+				id: "6C6483816039973C"
+				item: "create:goggles"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "3B55F0F607912C9A"
+					item: "create:speedometer"
+					type: "item"
+				}
+				{
+					id: "17EFB8552367E826"
+					item: "create:stressometer"
+					type: "item"
+				}
+			]
+			title: "値を読み取る"
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["615804DD646C221D"]
+			description: [
+				"　Createでは、他の工業MODのように、&6エネルギー&rの概念が存在し、回転速度&6RPM&rと応力&6SU&rという2つの単位が使用されます。"
+				""
+				"　回転速度&6RPM&rは歯車の回転速度で、機械の加工速度に直結します。回転速度は歯車を適切に噛み合わせることで調整が行えます。例えば、動力を大きな歯車から小さな歯車に&b噛み合わせる&rと、&bRPMは2倍に&rなります。逆に動力を小さな歯車から大きな歯車に噛み合わせると、&bRPMは半分に&rなります。詳細は歯車の&6思案画面&rから確認できます。"
+				""
+				"　応力&6SU&rは回転する力で、どれだけ機械を同時に動かせるかに繋がります。水車や風車などの動力源には&6許容応力&r(=生成するSU)が、機械には&6応力影響&r(=必要とするSU)が定められています。&b機械に伝える回転速度が倍になると、機械の処理速度と応力影響が倍に&rなり、逆に&b回転速度が半分になると処理速度と応力影響も半分に&rなります。&7(ファンなど、処理速度が回転速度に比例しないものもあります。)&r機械の応力影響が動力源の許容応力を上回ると、&c応力超過&rとして&c接続された機械すべてが停止&rするため注意してください。"
+				""
+				"　応力に余裕がある場合は回転速度を上げることで機械の動作が早くなり、逆の場合は回転速度を下げることでより多くの機械を同時に稼働させることができます。　"
+			]
+			icon: "create:large_cogwheel"
+			id: "76A485175777D3D5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "696CDB23CCB7E2B9"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "4B00AD9504C01DF9"
+				title: "OK"
+				type: "checkmark"
+			}]
+			title: "回転速度と応力"
+			x: 1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["126C811FE0A8B7CB"]
+			description: [
+				"　超接着剤は、動く機械の塊、&6からくり&rをまとめる際に必要なツールです。使い方は思案画面を確認してください。"
+				""
+				"　また、&9Create&rのレシピにより、&6スライムボール&rが&b小麦と染料から&r作成可能になっています。近くに湿地がない場合はこのレシピを活用してください。"
+			]
+			icon: {
+				Count: 1b
+				id: "create:super_glue"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "45142B9E76283C6D"
+			rewards: [{
+				id: "01D468F2CDA1820B"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					count: 16L
+					id: "38E931A7490287E3"
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+				{
+					id: "266ABD3AE9A41B37"
+					item: {
+						Count: 1b
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "べっとべと"
+			x: 7.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["52030436B884D260"]
+			description: [
+				"　&6石臼&rを使用することで、アイテムをすりつぶすことができます。例えば、小麦から小麦粉を得たり、花からより多くの染料を得たりできます。"
+				""
+				"　稼働させるには、石臼の側面に歯車を設置し、その上にハンドクランクを設置して回転させてください。アイテムはドロップするかホッパーなどを用いて搬入できます。詳細は石臼の思案画面を確認してください。"
+			]
+			icon: "create:millstone"
+			id: "2A4AAEC1A5EA07B5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6B380E3E98B4F344"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "204B0F5DD733651B"
+					item: "create:millstone"
+					type: "item"
+				}
+				{
+					id: "723C4F898E38871E"
+					item: "create:wheat_flour"
+					type: "item"
+				}
+			]
+			title: "ぐるぐる..."
+			x: -6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["126C811FE0A8B7CB"]
+			description: ["　&9Uppers&rの&6Upper&rは、上下反転したホッパーです。狭い場所で下から上へアイテムを運ぶときに有用でしょう。"]
+			id: "4A58B349189702D8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "34577CE57BDE9F9E"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			tasks: [{
+				id: "411F56B6DEB01564"
+				item: "uppers:upper"
+				type: "item"
+			}]
+			title: "アッパー！！！"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["126C811FE0A8B7CB"]
+			description: ["　&9TrashCans&rの&6TrashCan&rでは、搬入したアイテムや液体などを破棄することができます。ブラックリスト/ホワイトリストの設定も可能です。"]
+			icon: "trashcans:liquid_trash_can"
+			id: "7439EF6A764F6E62"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40B7AB92ABBF8574"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "5C77B649D709A54F"
+					item: "trashcans:item_trash_can"
+					type: "item"
+				}
+				{
+					id: "3FAE46774F25D530"
+					item: "trashcans:liquid_trash_can"
+					type: "item"
+				}
+			]
+			title: "取り消しはできません"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50B3C9D91731CF11"]
+			description: [
+				"　アイテムの運搬には、バニラのホッパー以外にも様々な機械が利用できます。"
+				""
+				"　&6ファンネル&rは、機械からアイテムを搬入したり搬入したりできる機械です。単体で使用できる他&6デポ&rや&6ベルトコンベア&rとも相性が良いです。"
+				""
+				"　&6シュート&rは、ファンネルと同様に機械からアイテムを搬入出できる機械ですが、こちらは垂直方向へアイテムを輸送することができます。"
+				""
+				"　&6メカニカルベルト&rは、アイテムや動力を水平方向へ輸送・伝達することができる機械です。一部の方向では斜め45°に設置可能です。"
+				""
+				"　&6デポ&rは、動かないメカニカルベルトのようなものです。ドロップアイテムは回収され、右クリック・ファンネル・シュートでの搬入出が行えます。"
+				""
+				"　それぞれの機械の詳細な使い方は思案画面を確認してください。"
+			]
+			icon: "create:belt_connector"
+			id: "126C811FE0A8B7CB"
+			rewards: [{
+				count: 16
+				id: "60B80963404ED9D6"
+				item: "minecraft:cactus"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "0E1E8B38A42B7432"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+				{
+					id: "3A4AE12A8FC0BBB2"
+					item: "create:chute"
+					type: "item"
+				}
+				{
+					id: "10319E8D6E6DAE4F"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "6BBC1CBA1088FE0B"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			title: "アイテムの運搬"
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["21FCECFDC5622050"]
+			description: [
+				"　&9Curios&rにより、&6エリトラ&rや&6不死のトーテム&r、&9Create&r製&6ゴーグル&rや&6バックタンク&rなどのアイテムを、Curios専用のスロットに装備することができます。"
+				""
+				"　スロットを開くには、インベントリ画面でスキンの左上にあるアイコンを押してください。"
+				""
+				"　スロットの右上の小さなボタンを押すと、そのアイテムを&b非表示に&rすることができます。ゴーグルなどがスキンの上に表示されるのが邪魔な場合は使ってみると良いでしょう。"
+			]
+			icon: "create:goggles"
+			id: "2667C61D9FE0B067"
+			rewards: [
+				{
+					id: "0EAF1CB08463459A"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					id: "2BC4224459ECA5D4"
+					item: {
+						Count: 1b
+						id: "create:copper_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03AD48020048C7D8"
+					item: {
+						Count: 1b
+						id: "create:copper_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2E98CB227A5CE6A7"
+					item: {
+						Count: 1b
+						id: "create:copper_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4CDB0DC37A833BF4"
+				title: "OK"
+				type: "checkmark"
+			}]
+			title: "アクセサリースロット"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1FD92DE1CB4DBAA5"]
+			description: [
+				"　Createでの動力は、&6大きな歯車&rや&6ギアボックス&rなどを用いて向きを変えることができます。詳細は思案画面を確認してください。"
+				""
+				"　なお、機械自体の向きは、&6レンチ&rで右クリックすれば、その面を軸に時計回りで回転させることができます。また、大抵の機械類はレンチで&6Shift&r+&6右クリック&rすることで簡単に回収可能です。"
+			]
+			id: "615804DD646C221D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "259A3B1FC4D39FA3"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "7C6A79FC509FD4E5"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			title: "軸の回転"
+			x: 0.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"5B5C6F8090D85CC6"
+				"16D8EFCD1CA23AB9"
+			]
+			description: [
+				"　水車または風車から得た動力を、メカニカルプレスや石臼に伝達しましょう。伝達に使用できるブロックはいくつかあるので、見栄えやコスト、用途などを考えて使い分けてください。"
+				""
+				"　また、&6クラッチ&rは、RS信号を入力している間、&b動力の伝達を停止&rすることができます。"
+				""
+				"　それぞれの機械の使い方は思案画面を確認してください。"
+			]
+			icon: "create:shaft"
+			id: "1FD92DE1CB4DBAA5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E65ACCE88FE759E"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "7F58EA582D9DDA70"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					id: "1AEFC5EBBCF3586B"
+					item: "create:encased_chain_drive"
+					type: "item"
+				}
+				{
+					id: "709980A524E0D1DE"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "049CB4FE3EC01C80"
+					item: "create:clutch"
+					type: "item"
+				}
+			]
+			title: "伝達"
+			x: -1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["1FD92DE1CB4DBAA5"]
+			description: ["　&6各種ケーシング&rで歯車やシャフトなどの伝達機械を飾れます。また、歯車はケースを被せると、&bシャフトや歯車が繋がらないように&rできます。これは狭い場所での歯車の干渉防止に有効です。"]
+			id: "7E45B56FA92B3241"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C3039D4C189828A"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2B9647B4684EA331"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "見栄えと干渉防止"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2A4AAEC1A5EA07B5"]
+			description: [
+				"　&6ファン&rは、回転力で気流を生み出し、溶岩・炎・水・魂の炎を含ませた気流を用いてアイテムを加工するためのマシンです。"
+				""
+				"　溶岩による&6精錬気流&rは石や鉱石などを精錬するための気流です。かまどとは異なり、燃料不要で&b複数アイテムをまとめて&r精錬することができます。ただし、食品の加工には火力が強すぎるため、&c食べ物などのアイテムは焼失&rします。"
+				""
+				"　炎や焚き火による&6燻製気流&rは食品の加工に適した気流で、生肉や昆布などを燻製加工する際に使用できます。"
+				""
+				"　水による&6洗浄気流&rはアイテムに水を含ませたり別のアイテムを得たりする際に使われる便利な気流です。例えば砂利を洗浄すると確率で&6鉄塊&rと&6火打石&rが手に入り、ソウルサンドを洗浄すると確率で&6クォーツ&rと&6金塊&rが手に入ります。また、この気流は&6砕いた鉱石&rから副産物を得るためにも使用されます。"
+				""
+				"　使用方法の詳細は&6思案画面&rを確認してください。"
+			]
+			icon: "create:encased_fan"
+			id: "6FC8A9B8CDBF2241"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "074C33BD4D581CBF"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "540631D12837A607"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "705087F50375EAAE"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					id: "692DC3DB9BF9FED1"
+					item: "minecraft:dried_kelp"
+					type: "item"
+				}
+				{
+					id: "50A4EAE1073EB04B"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					id: "54C9F8AB9224A3B4"
+					item: "create:dough"
+					type: "item"
+				}
+			]
+			title: "万能な加工マシン"
+			x: -4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["21FCECFDC5622050"]
+			description: [
+				"　&6メカニカルミキサー&rは、アイテムや液体を混ぜるための機械です。この機械で、安山岩合金をクラフトの倍の量作成することができます。"
+				""
+				"　なお、稼働には&c30RPM以上&rが必要なため、必要に応じて回転速度を調整してください。"
+			]
+			icon: "create:mechanical_mixer"
+			id: "50B3C9D91731CF11"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C31A6FDCA98B2E0"
+				table_id: 133561594856328009L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "599A8271BD4FB37C"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "2C23E71A13666364"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			title: "金属も混ぜられる"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["45142B9E76283C6D"]
+			description: [
+				"　&9Chunk Loaders&rのチャンクローダーを使用して、機械から離れていても稼働し続けるようにしましょう。"
+				""
+				"　&6Lv1チャンクローダ&rは3x3=9チャンクの範囲をロードできます。1チャンクのみロードできる&6シングルチャンクローダ&r9つへの分解や、より読み込み可能範囲の広い上位のものにアップグレードも行えます。"
+				""
+				"　付近のチャンクロードを確認・一括設定するには、&6J&rキーを押してください。"
+			]
+			icon: "chunkloaders:basic_chunk_loader"
+			id: "4F38557FFB0C01EE"
+			rewards: [{
+				id: "0D45CE07496DC038"
+				item: "chunkloaders:advanced_chunk_loader"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "58361CE1C2F017A0"
+					item: "chunkloaders:basic_chunk_loader"
+					type: "item"
+				}
+				{
+					id: "02138FFA6DDFFC99"
+					item: "chunkloaders:single_chunk_loader"
+					type: "item"
+				}
+			]
+			title: "離れていても"
+			x: 9.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["4F38557FFB0C01EE"]
+			description: [
+				"　&9Server Tab Info&rの機能により、&6Ctrl&r+&6Tab&rでワールドの&6MSPT&rや&6TPS&rを確認できます。"
+				""
+				"　&6TPS&rは、1秒あたりに処理されたTick数です。20の場合は正常ですが、これよりも値が下がると、ワールドに影響が出始めます。"
+				""
+				"　&6MSPT&rは、1Tickの処理にかかった時間(ミリ秒)です。50ms未満の場合はワールドに影響が出ませんが、超えると&6TPS&rが20を切り、ワールドでの時間の進みが遅くなってしまい、快適なプレイができなくなります。"
+				""
+				"　なお、これらの値は&cFPS値とは異なる&r点に注意してください。"
+				""
+				"　また、&9Observable&rを用いれば、ワールドの何が(内部)サーバーに負荷をかけているのか集計を取ることができます。&6F10&rを押してGUIを開いたら、&6Profile TPS&rを押して集計を開始します。結果はブラウザ上で確認してください。"
+			]
+			icon: "createdeco:orange_decal"
+			id: "5A25088B589AB18A"
+			rewards: [{
+				count: 8
+				id: "5FA7B0F6728A6034"
+				item: "compact_storage:compact_barrel_white"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7427573FDDB77077"
+				title: "OK"
+				type: "checkmark"
+			}]
+			title: "ワールドが悲鳴をあげる前に"
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F38557FFB0C01EE"]
+			description: [
+				"　&9Create Sifter&rの&6ふるい分け機&rを用いて、金属資源を無限化しましょう。&6亜鉛のメッシュ&rで砂利を振るうと、確率で金属塊に変化します。"
+				""
+				"　&9Create Mechanical Extruder&rの&6メカニカル押出機&rは、ワールドへの負荷が少ない丸石製造機です。"
+				""
+				"(作成例はテストワールドをご覧ください)"
+				"{image:starterquestofcreate:textures/sifter_basic.png width:16 height:10 align:1 fit:true}"
+				"{image:starterquestofcreate:textures/sifter_basic_drawers.png width:16 height:10 align:1 fit:true}"
+			]
+			icon: "createsifter:sifter"
+			id: "6632A69E27E1CEB0"
+			rewards: [
+				{
+					count: 4
+					id: "394D3EB8743F35F3"
+					item: "create_mechanical_extruder:mechanical_extruder"
+					type: "item"
+				}
+				{
+					id: "38CBC7CE9342A62C"
+					item: "storagedrawers:controller"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "78693F7DAC4DFCA8"
+					item: "storagedrawers:compacting_drawers_3"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "6081B1D8C8816419"
+					item: "createsifter:sifter"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "187F3D32B66E46CA"
+					item: {
+						Count: 1b
+						id: "createsifter:zinc_mesh"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "&6金属を無限化&r"
+			x: 10.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["45142B9E76283C6D"]
+			description: [
+				"　&6風車ベアリング&rと&6ハーベスター&rを使用して、回転式の作物自動回収機を作成しましょう。"
+				""
+				"　&6風車ベアリング&rは本来、風の力を回転力に変換するための機械ですが、帆の部分に機械を設置して超粘着剤で接着することで、&6からくり&rとして動作させられます。"
+				""
+				"　&6メカニカルハーベスター&rは、からくりに組み込むことで野菜等の収穫・植え直しを行う機械です。収穫した野菜はからくり内の任意のコンテナ(チェストやバレル等)に保管されます。"
+				""
+				"　&6ポータブルストレージインタフェース&r、通称&6PSI&rは、からくりを止めることなく、アイテムを搬入出できるようにするブロックです。一つはブロックとして、一つはからくりとして設置し、間には1-2ブロックの間を空けます。"
+				""
+				"　&6ファンネル&rと、&6Drawer Key&rでロックした&6Drawer&rを用いて、収穫した野菜を仕分けできるとなお良いでしょう。&7(ロックしたDrawerは一度入れたアイテム以外の種類のアイテムを受け付けなくなります)"
+				""
+				"　なお、からくりや工場を作成する際、チャンクボーダーをまたいでしまうと、&cチャンクローダーが設定しづらくなり&r、&cバグも発生しやすくなる&rので注意してください。チャンクボーダーは&6F3&r+&6G&rを押すことで確認できます。"
+				""
+				"　その他のそれぞれの機械については、思案画面で使い方を確認してください。"
+				""
+				"{image:starterquestofcreate:textures/harvester.png width:960 height:600 align:1 fit:true}"
+				""
+				"　次の章に進むには、この章のクエストを&cすべて完了&rさせてください。"
+			]
+			icon: "create:mechanical_harvester"
+			id: "4954175AC686B225"
+			rewards: [
+				{
+					count: 64
+					id: "4897A1EE703529E3"
+					item: "create:white_sail"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "3C7AF58DF85A234D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "11F2E3B669761530"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "05F5D8407E799CB0"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0672B8A0CD35B6E1"
+					item: "create:white_sail"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "46A01FB536640243"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+				{
+					id: "5165DAA42C6BC601"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "storagedrawers:drawers"
+						}
+					}
+					title: "Any #storagedrawers:drawers"
+					type: "item"
+				}
+			]
+			title: "農業を自動化しよう"
+			x: 7.5d
+			y: -2.0d
+		}
+	]
+	title: "Createへようこそ"
+}
