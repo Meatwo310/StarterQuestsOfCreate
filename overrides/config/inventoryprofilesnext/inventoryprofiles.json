@@ -58,12 +58,57 @@
                 "keys": "BUTTON_3"
             }
         },
+        "sort_inventory_in_columns": {
+            "main": {
+                "keys": "LEFT_SHIFT,BUTTON_3"
+            }
+        },
+        "sort_inventory_in_rows": {
+            "main": {
+                "keys": "LEFT_CONTROL,BUTTON_3"
+            }
+        },
         "scroll_to_chest": {
             "main": {
                 "keys": ""
             }
         },
         "scroll_to_inventory": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "apply_profile": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "next_profile": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "prev_profile": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_1": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_2": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_3": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "save_as_profile": {
             "main": {
                 "keys": ""
             }

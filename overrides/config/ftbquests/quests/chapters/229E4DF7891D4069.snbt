@@ -15,7 +15,7 @@
 				""
 				"　また、強化版リピーターや回路ブリッジなど、バニラにはない追加の回路が用意されています。"
 				""
-				"　1/8サイズのブロックは&6Block Chopper&rで作成可能です。また、回路はRedstone Wrenchで回転・回収が可能です。"
+				"　1/8サイズのブロックは&6Block Chopper&rで作成可能です。また、回路は&6Redstone Wrench&rで回転・回収が可能です。"
 			]
 			icon: "tinyredstone:tiny_redstone"
 			id: "439A091C7BC1804B"
@@ -105,23 +105,27 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "07AC9E531B62F965"
-					item: "tinygates:and_gate_item"
+					id: "235F26436B708840"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "^tinygates:(?!tiny_).*$"
+						}
+					}
+					title: "Tiny Gatesの回路"
 					type: "item"
 				}
 				{
-					id: "2069BA8FC288D6F9"
-					item: "tinygates:not_gate_item"
-					type: "item"
-				}
-				{
-					id: "276416084DBBA199"
-					item: "tinygates:tiny_or_gate"
-					type: "item"
-				}
-				{
-					id: "2F2471EDE9C07D28"
-					item: "tinygates:tiny_xor_gate"
+					id: "75D55617920C9135"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "^tinygates:tiny_.*$"
+						}
+					}
+					title: "Tiny Gatesの小さな回路"
 					type: "item"
 				}
 			]
@@ -134,11 +138,11 @@
 			description: [
 				"　&9Construction Wand&rは、大規模な&m&8豆腐&r建築を効率的に行えるようにする杖を追加します。"
 				""
-				"　杖を持ってブロックを&6右クリック&rすると、見ているブロック(またはオフハンドに所持しているブロック)を大量に設置することができます。インベントリ、または所持しているシュルカーボックスやバックパックなどにそのブロックがない場合は設置ができないので注意してください。"
+				"　杖を持ってブロックを&6右クリック&rすると、見ているブロック(またはオフハンドに所持しているブロック)を大量に設置することができます。ブロックはインベントリや所持しているシュルカーボックス・バックパック等から消費されます。"
 				""
-				"　設置モードの変更は、杖を&6Shift&r+&6マウスホイール上下&rで行えます。"
+				"　杖を&6Shift&r+&6マウスホイール上下&rすれば、設置モードを変更できます。"
 				""
-				"　Undo機能もあり、設置したブロックに&6Ctrl&r+&6Shift&r+&6右クリック&rで設置をなかったことにできます。"
+				"　設置したブロックに&6Ctrl&r+&6Shift&r+&6右クリック&rすることで、設置を1段階取り消すことができます。"
 				""
 				"　設定を開くには、杖を空中へ&6Ctrl&r+&6Shift&r+&6右クリック&rしてください。"
 			]
@@ -183,6 +187,7 @@
 				table_id: 3932730223930702446L
 				type: "random"
 			}]
+			shape: "gear"
 			size: 1.5d
 			tasks: [
 				{
@@ -226,8 +231,8 @@
 					type: "item"
 				}
 			]
-			title: "建築センス"
-			x: 0.75d
+			title: "&6街を作ろう"
+			x: 2.25d
 			y: -4.5d
 		}
 		{
@@ -269,7 +274,7 @@
 		}
 		{
 			dependencies: ["0D21794DE735B366"]
-			description: ["　&9Macaw's&r系MODは、合計で2000種類以上の建材を追加するMODです。アイテム数が多すぎることにより、ここでは紹介しきれないため、&9JEI&rで&6@macaw&rと検索してどんなブロックがあるのか確かめてみると良いでしょう。"]
+			description: ["　&9Macaw's&r系MODは、合計で2000種類以上の建材を追加するMODです。ブロック数が多すぎるため、ここでは紹介を割愛します。&9JEI&rで&6@macaw&rと検索してどんなブロックがあるのか確かめてみると良いでしょう。"]
 			icon: "mcwfurnitures:oak_chair"
 			id: "3AD9F525D8FECEA8"
 			rewards: [{
@@ -281,58 +286,102 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "0AE89EE30D26591B"
-					item: "mcwwindows:oak_window"
+					id: "49C167F494C2C8A0"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "mcwbridges"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "4AFABD489545691A"
-					item: "mcwdoors:oak_japanese_door"
+					id: "5731A54D9E2ABB7A"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "mcwdoors"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "5709970CA6509061"
-					item: "mcwbridges:oak_log_bridge_middle"
+					id: "4E064275A609EA79"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "mcwfences"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "1D2013969456D351"
-					item: "mcwbridges:oak_log_bridge_stair"
+					id: "5675EB7D7EE10DDB"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "mcwfurnitures"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "7D6C7AA49625696F"
-					item: "mcwtrpdoors:oak_cottage_trapdoor"
+					id: "64C75CF4E287E783"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "mcwlights"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "42634F262EB4BB8D"
-					item: "mcwfences:oak_horse_fence"
+					id: "5A48C74788A7E3FF"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "mcwpaths"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "6F94A3008B56D5B2"
-					item: "mcwroofs:oak_roof"
+					id: "376F0BB83AA832B2"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "mcwroofs"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "03E432EF7F244793"
-					item: "mcwfurnitures:oak_wardrobe"
+					id: "1767A3856234E4EB"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "mcwtrpdoors"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "26C5F5B1A7CCF62B"
-					item: "mcwfurnitures:oak_chair"
-					type: "item"
-				}
-				{
-					id: "676D20C138CD554E"
-					item: "mcwlights:oak_tiki_torch"
-					type: "item"
-				}
-				{
-					id: "394016303480FAE9"
-					item: "mcwpaths:oak_planks_path"
+					id: "6313BCF876CD572A"
+					item: {
+						Count: 1b
+						id: "itemfilters:mod"
+						tag: {
+							value: "mcwwindows"
+						}
+					}
 					type: "item"
 				}
 			]
@@ -345,11 +394,11 @@
 			description: [
 				"　&9Create&rを使用すれば、ワールドの建造物や、他のワールドで作成したものを簡単に複製することができます。"
 				""
-				"　まず、&6概略図と羽ペン&rを利用して、構造物をNBTファイルとして保存します。使用方法はアイテムにカーソルを合わせて&6Shift&rで確認できます。"
+				"　まず、&6概略図と羽ペン&rを利用して、構造物をNBTファイルとして保存します。"
 				""
 				"　次に、&6概略図台&rを使用して、概略図と羽ペンで保存したNBTファイルを新しい&6概略図&rに書き込みます。なお、NBTファイルは&6別ワールドで保存したものも選択可能&rです。"
 				""
-				"　最後に、&6概略図砲&rを準備します。建築位置を設定した概略図を入れ、本か&6クリップボード&rを入れると、&6素材チェックリスト&rを得ることができます。これを用いて、概略図砲の横にチェスト等を設置し、必要な建材を投入します。&6アイテム金庫&rや&9Compact Storage&rの&6Compact Barrel&rが適しているでしょう。必要に応じて概略図砲の設定を済ませ、燃料として火薬&7(少量で十分です)&rを投入したら、開始ボタンを押して建設を始めます。"
+				"　最後に、&6概略図砲&rを準備します。建築位置を設定した概略図を入れ、本か&6クリップボード&rを入れると、&6素材チェックリスト&rを得ることができます。必要な建材は、概略図砲の横に設置したバレルやアイテム金庫等に投入してください。必要に応じて概略図砲の設定を済ませ、燃料として火薬&7(少量で十分です)&rを投入したら、開始ボタンを押して建設を始めます。"
 			]
 			icon: "create:schematicannon"
 			id: "3EC5F876B54E166F"
@@ -391,7 +440,7 @@
 				}
 			]
 			title: "チート砲"
-			x: 2.25d
+			x: 0.75d
 			y: -4.5d
 		}
 		{
@@ -480,6 +529,27 @@
 			title: "Createの回路"
 			x: -2.25d
 			y: 0.0d
+		}
+		{
+			dependencies: ["0D21794DE735B366"]
+			description: ["　&9Copycats+&rは、Createのコピーブロックの種類を増やすMODです。作成するには、石切台を使用してください。"]
+			icon: "copycats:copycat_stairs"
+			id: "50D4F86ED916B6CC"
+			size: 1.5d
+			tasks: [{
+				id: "5C95BBF73B0204F4"
+				item: {
+					Count: 1b
+					id: "itemfilters:mod"
+					tag: {
+						value: "copycats"
+					}
+				}
+				type: "item"
+			}]
+			title: "無限の可能性"
+			x: 0.75d
+			y: -2.25d
 		}
 	]
 	title: "建築と装飾"

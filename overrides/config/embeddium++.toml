@@ -5,7 +5,7 @@
 		#Set Fullscreen mode
 		#Borderless let you change between screens more faster and move your mouse across monitors
 		#Allowed Values: WINDOWED, BORDERLESS, FULLSCREEN
-		fullscreen = "FULLSCREEN"
+		fullscreen = "WINDOWED"
 		#Configure FPS Display mode
 		#Complete mode gives you min FPS count and average count
 		#Allowed Values: OFF, SIMPLE, ADVANCED
@@ -27,7 +27,7 @@
 
 	[embeddiumplus.quality]
 		#Toggle fog feature
-		#Fog was a vanilla feature, toggling off may increases performance
+		#Fog was a vanilla feature
 		fog = true
 		#Raise clouds
 		#Modify clouds height perfect for a adaptative world experience
@@ -37,6 +37,12 @@
 		#This option doesn't affect performance, just changes speed
 		#Allowed Values: OFF, FAST, SLOW
 		chunkFadeSpeed = "SLOW"
+		#Clean my skies
+		#Blue band was a vanilla feature, toggle off will show sky color directly
+		blueBand = true
+		#Do not show me your name
+		#disables nametag rendering for players and entities
+		disableNameTagRendering = false
 
 		[embeddiumplus.quality.darkness]
 			#Configure Darkness Mode
@@ -82,11 +88,10 @@
 		#Depending of the case may increase performance
 		#Gives a flat style text
 		fontShadows = true
-		#Toggles FastChest feature
-		#Without flywheel installed or using any backend, it increases FPS significatly on chest rooms
-		fastChests = false
-		#Toggles FastBeds feature
-		fastBeds = true
+		#Sets culling mode
+		#Reduces number of visible faces when the neighbor blocks are leaves
+		#Allowed Values: ALL, OFF
+		leavesCulling = "OFF"
 
 		[embeddiumplus.performance.distanceCulling]
 
@@ -109,8 +114,8 @@
 				whitelist = ["waterframes:*"]
 
 			[embeddiumplus.performance.distanceCulling.entities]
-				#Toggles distance culling for entities
-				#Maybe you use another mod for that :(
+				#Toggles distance culling for entities, doesn't affect monsters culling
+				#Check the options below
 				enable = false
 				#Configure horizontal max distance before cull entities
 				#Value is squared, default was 64^2 (or 64x64)
@@ -125,6 +130,31 @@
 				#Example 1: "minecraft:bat" - Ignores bats only
 				#Example 2: "alexsmobs:*" - ignores all entities for alexmobs mod
 				whitelist = ["minecraft:ghast", "minecraft:ender_dragon", "iceandfire:*", "create:*"]
+
+				[embeddiumplus.performance.distanceCulling.entities.monsters]
+					#Toggles distance culling for monsters (or hostile entities, whatever you want to call it), doesn't affect neutral/pacific entities
+					#Check the options above
+					enable = false
+					#Configure horizontal max distance before cull monster entities
+					#Value is squared, default was 64^2 (or 64x64)
+					#Range: > 0
+					cullingMaxDistanceX = 16384
+					#Configure vertical max distance before cull monster entities
+					#Value is raw
+					#Range: 0 ~ 512
+					cullingMaxDistanceY = 64
+					#List of all monster entities to be ignored by distance culling
+					#Uses ResourceLocation to identify it
+					#Example 1: "minecraft:bat" - Ignores bats only
+					#Example 2: "alexsmobs:*" - ignores all entities for alexmobs mod
+					whitelist = ["minecraft:ghast", "minecraft:ender_dragon", "iceandfire:*", "create:*"]
+
+		[embeddiumplus.performance.fastModels]
+			#Toggles FastChest feature
+			#Without flywheel installed or using any backend, it increases FPS significatly on chest rooms
+			enableChests = false
+			#Toggles FastBeds feature
+			enableBeds = false
 
 	[embeddiumplus.others]
 		#Configure if borderless fullscreen option should be attached to F11 or replace vanilla fullscreen

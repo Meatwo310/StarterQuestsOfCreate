@@ -36,34 +36,27 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "5CA133FE23F02307"
-					table_id: 3932730223930702446L
-					type: "random"
-				}
-			]
-			size: 1.5d
-			tasks: [
-				{
-					block: "waystones:waystone"
-					block_type: 0
-					checkItem: false
-					id: "787F69153C038DC4"
-					isItemInteraction: false
-					type: "questsadditions:use"
-					value: 1L
-				}
-				{
-					id: "325C421B0EC21ACB"
+					id: "1A5A7104B9E9E3E1"
 					item: "waystones:portstone"
 					type: "item"
 				}
 				{
-					id: "3EEEA41C8CE22B2F"
+					count: 2
+					id: "2D47B830244C8038"
 					item: "waystones:sharestone"
 					type: "item"
 				}
 			]
+			size: 1.5d
+			tasks: [{
+				block: "waystones:waystone"
+				block_type: 0
+				checkItem: false
+				id: "787F69153C038DC4"
+				isItemInteraction: false
+				type: "questsadditions:use"
+				value: 1L
+			}]
 			title: "自動生成テレポーター"
 			x: 4.5d
 			y: -0.75d
@@ -111,7 +104,7 @@
 			description: [
 				"　&6Return Scroll&rでは、触れたことのある最寄りのWaystoneへテレポートできます。携帯しておくと便利でしょう。"
 				""
-				"　&6Bound Scroll&rでは、事前に割り当てておいたWaystoneへテレポートできます。他のプレイヤーにウェイストーンを共有するときに便利です。"
+				"　&6Bound Scroll&rでは、事前に割り当てておいたWaystoneへテレポートできます。"
 				""
 				"　&6Warp Scroll&rでは、一度触れたすべてのWaystoneへテレポートすることができます。&6Warp Stone&rと違いクールダウンはありません。"
 				""
@@ -152,13 +145,11 @@
 				"0AFEC5AD1EABB6CE"
 			]
 			description: [
-				"　&6Warp Plate&rは、指定した他のWarp Plateへテレポートすることができるブロックです。"
+				"　&6Warp Plate&rは、乗ったエンティティを指定したWarp Plateへテレポートすることができるブロックです。"
 				""
-				"　Warp Plate設置時に生成される&6Attuned Shard&rを、他のWarp Plateに設置することで、設置したWarp PlateはAttuned Shardが生成されたWarpPlateへテレポートするようになります。"
+				"　Warp Plate設置時に生成される&6Attuned Shard&rはテレポート先を示す石となります。Warp Plate Aで生成されたAttuned ShardをWarp Plate Bにセットした場合、Warp Plate Bのテレポート先はPlate Aとなります。"
 				""
 				"　Attuned Shardは火打石と&6Warp Dust&rから再生成可能です。"
-				""
-				"　なお、プレイヤーの他に、アイテムやモブなども転送することができます。"
 			]
 			icon: "waystones:warp_plate"
 			id: "1695A8AE7B8156C4"
@@ -182,12 +173,22 @@
 			description: ["　&6エンダードラゴン&rを討伐しましょう。"]
 			icon: "minecraft:dragon_head"
 			id: "466B00FD629B5C9F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0245197F9FF1A233"
-				table_id: 3932730223930702446L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0245197F9FF1A233"
+					table_id: 3932730223930702446L
+					type: "choice"
+				}
+				{
+					auto: "invisible"
+					command: "/playsound minecraft:ui.toast.challenge_complete master @a 0 0 0 1.0 1.0 1.0"
+					id: "1E49F35AA7A9324E"
+					silent: true
+					team_reward: true
+					type: "command"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -342,7 +343,11 @@
 		}
 		{
 			dependencies: ["42E6DEE67DBBE541"]
-			description: ["　&9Create: Balanced Flight&rの&6Ascended Flight Ring&rは、装備中どこでもクリエイティブ飛行とエリトラ飛行を可能にする&6最強の飛行手段&rです。このリングを使用してエリトラ飛行している間、前進キーとダッシュキーを押すことで、&cロケット花火を消費せずに&r加速が行なえます。"]
+			description: [
+				"　&9Create: Balanced Flight&rの&6Ascended Flight Ring&rは、装備中どこでもクリエイティブ飛行とエリトラ飛行を可能にする&6最強の飛行手段&rです。このリングを使用してエリトラ飛行している間、前進キーとダッシュキーを押すことで、&cロケット花火を消費せずに&r加速が行なえます。"
+				""
+				"　本来は非常に高価なアイテムですが、このパックでは、レシピが非常に簡略化されています。"
+			]
 			id: "53B70D61CA1E1DA5"
 			rewards: [{
 				exclude_from_claim_all: true

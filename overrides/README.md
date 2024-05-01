@@ -21,6 +21,6 @@ Note: Quests in this MODPack are written in Japanese. English translation is not
 
 ## フォント・アイコンについて / About the fonts and icons
 
-`fonts/NotoSansJP-*.ttf` is distributed under the SIL Open Font License 1.1. See `fonts/OFL.txt` for details.
+`fonts/*.ttf` is distributed under the SIL Open Font License 1.1. See `fonts/OFL.txt` for details.
 
-Icons for this MODPack: Auto repair icon by [Lorc](https://lorcblog.blogspot.com/) under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/) (Modified using https://game-icons.net)
+Icon: CC0

@@ -3,10 +3,10 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "44B2768C1A5508BE"
-	group: ""
+	group: "198F0D9673850C85"
 	icon: "create:clipboard"
 	id: "44B2768C1A5508BE"
-	order_index: 4
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -14,6 +14,7 @@
 			description: ["・初公開"]
 			disable_toast: true
 			id: "6DD9F09180CF8A45"
+			size: 1.5d
 			tasks: [{
 				disable_toast: true
 				icon: "create:clipboard"
@@ -25,7 +26,7 @@
 			}]
 			title: "v1.0"
 			x: 4.5d
-			y: -3.5d
+			y: -3.75d
 		}
 		{
 			dependencies: ["6DD9F09180CF8A45"]
@@ -37,6 +38,7 @@
 			]
 			disable_toast: true
 			id: "2745F65B850B6656"
+			size: 1.5d
 			tasks: [{
 				disable_toast: true
 				icon: "create:clipboard"
@@ -47,17 +49,18 @@
 				value: 1
 			}]
 			title: "v1.1"
-			x: 6.5d
-			y: -3.5d
+			x: 6.0d
+			y: -3.75d
 		}
 		{
 			dependencies: ["2745F65B850B6656"]
 			description: [
-				"- 多くのMODをアップデートし、コンフィグを調整しました。"
-				"- フォントをリソパ形式のRounded Mgen+から、ModernUI形式のNoto Sans JPに変更しました。"
-				"- RubidiumをEmbeddiumに変更し、各種軽量化MODを調整しました。"
-				"- Create Armoryを削除しました"
-				"- クエストにおいて、もとのMOD名に空白を含む場合は、クエストでも空白を用いるよう変更しました。"
+				"・MODの追加・削除・更新や、コンフィグの調整を行いました。"
+				"　・&cCreate Armoryを削除しました&r。"
+				"　・RubidiumをEmbeddiumに変更し、各種軽量化MODを調整しました。"
+				"・フォントをリソースパック形式の&7Rounded Mgen+&rから、ModernUI形式の&7Montserrat&r + &7Noto Sans JP&rに変更しました。"
+				"・クエストの説明、要求アイテム、報酬等を改善しました。"
+				"・一部レシピを易化しました。"
 			]
 			disable_toast: true
 			id: "392151620A1FE0DA"
@@ -67,6 +70,7 @@
 				table_id: 133561594856328009L
 				type: "loot"
 			}]
+			size: 1.5d
 			tasks: [{
 				disable_toast: true
 				icon: "create:clipboard"
@@ -76,9 +80,9 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "v1.2-&calpha&r"
-			x: 8.5d
-			y: -3.5d
+			title: "v1.2-&ebeta-3&r"
+			x: 7.5d
+			y: -3.75d
 		}
 	]
 	title: "更新履歴"

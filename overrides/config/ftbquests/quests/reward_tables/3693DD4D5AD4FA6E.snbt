@@ -1,17 +1,33 @@
 {
-	icon: "minecraft:diamond"
+	icon: {
+		Count: 1b
+		id: "ftbquests:lootcrate"
+		tag: {
+			type: "rare_items"
+		}
+	}
 	id: "3693DD4D5AD4FA6E"
+	loot_crate: {
+		color: 16768426
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: 1b
+		string_id: "rare_items"
+	}
 	loot_size: 1
 	order_index: 4
 	rewards: [
 		{ count: 3, item: "minecraft:wither_skeleton_skull", weight: 2.0f }
-		{ count: 4, item: "minecraft:diamond", weight: 3.0f }
-		{ count: 4, item: "minecraft:emerald", weight: 3.0f }
 		{ count: 3, item: "minecraft:netherite_ingot" }
 		{ item: "minecraft:nether_star" }
 		{ count: 4, item: "minecraft:shulker_shell" }
-		{ count: 3, item: "minecraft:totem_of_undying" }
-		{ count: 4, item: "minecraft:ender_pearl", weight: 0.5f }
+		{ item: "minecraft:totem_of_undying", weight: 0.5f }
+		{ count: 8, item: "minecraft:ender_pearl" }
+		{ item: "minecraft:dragon_breath", weight: 0.125f }
+		{ item: "minecraft:dragon_head", weight: 0.0625f }
 	]
 	title: "Rare Items"
 }

@@ -20,6 +20,7 @@
 				"229E4DF7891D4069"
 				"1B3B19D72A6563DB"
 			]
+			description: ["　ヒント: 真鍮ふるい・真鍮メッシュを用いて金属資源を無限化しましょう。"]
 			hide: true
 			icon: "minecraft:iron_block"
 			id: "5BBB2345E4E61A88"
@@ -80,54 +81,55 @@
 		}
 		{
 			dependencies: ["5BBB2345E4E61A88"]
+			description: ["　ヒント: メカニカルハーベスターをからくりに組み込み、農作業を自動化しましょう。"]
 			icon: "prefab:item_crate_of_carrots"
 			id: "7C8ECC6188171056"
 			tasks: [
 				{
 					consume_items: true
-					count: 64L
+					count: 8L
 					id: "6D0D78067E957F9D"
 					item: "prefab:item_crate_of_potatoes"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 8L
 					id: "3E51B390D57342F1"
 					item: "prefab:item_crate_of_carrots"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 8L
 					id: "3D8C4BC47AA96293"
 					item: "prefab:item_crate_of_beets"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 8L
 					id: "3EACC02824DAFE17"
 					item: "farmersdelight:cabbage_crate"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 8L
 					id: "66A750520A1DAF71"
 					item: "farmersdelight:tomato_crate"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 8L
 					id: "31BC1E2587308CE2"
 					item: "farmersdelight:onion_crate"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 8L
 					id: "4F72E828BAA45083"
 					item: "farmersdelight:rice_bag"
 					type: "item"
@@ -144,65 +146,51 @@
 			tasks: [
 				{
 					consume_items: true
-					count: 64L
+					count: 8L
 					id: "7E2586DB906B9272"
 					item: "create:blaze_burner"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 8L
 					id: "398D9B0020B89AF6"
 					item: "create:steam_engine"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 8L
 					id: "0F9BE0A248B49B36"
 					item: "create:deployer"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 12L
 					id: "4C13B3B23A33D3BF"
 					item: "create:mechanical_crafter"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 4L
 					id: "37D5C372F66FADD4"
 					item: "create:rotation_speed_controller"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 4L
 					id: "27DA697E55015382"
 					item: "create:mechanical_arm"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 2L
 					id: "62E6DABA4A9AC1E6"
 					item: "create:blaze_cake"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 64L
-					id: "0334A8B304C0E4F1"
-					item: "create_confectionery:gingerbread_block"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 64L
-					id: "7004C204E961C6DB"
-					item: "createaddition:modular_accumulator"
 					type: "item"
 				}
 			]
@@ -212,20 +200,40 @@
 		}
 		{
 			dependencies: ["5BBB2345E4E61A88"]
-			icon: "minecraft:nether_star"
+			icon: {
+				Count: 1b
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "0083B330A6068EEC"
 			tasks: [
 				{
-					consume_items: true
-					count: 4L
-					id: "06AB9112AD9197B4"
-					item: "minecraft:nether_star"
+					id: "669706625E1DF2D7"
+					item: "create_enchantment_industry:hyper_experience_bottle"
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "2165E0E15D9713C4"
-					item: "create_enchantment_industry:hyper_experience_bottle"
+					id: "437C06060DBECCB3"
+					item: "farmersdelight:roast_chicken_block"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "758E7D20A6A80CBC"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "095176A8F4227ADA"
+					item: {
+						Count: 1b
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -240,9 +248,7 @@
 				"7C8ECC6188171056"
 			]
 			description: [
-				"　全クエストクリアおめでとうございます！ここまでの道のりで様々なMODについての知識が深まったことと思います。"
-				""
-				"　これにてこのMODPackは終了となります。最後に&dクリエイティブ系&rアイテムを配布しますので、存分に使い倒してみてください。"
+				"　全クエストクリアおめでとうございます！　これにてこのMODPackは終了となります。最後に&dクリエイティブ系&rアイテムを配布しますので、存分に使い倒してみてください。"
 				""
 				"　最後までプレイしてくださってありがとうございました。完走お疲れ様です！"
 			]

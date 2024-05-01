@@ -144,7 +144,7 @@
 	#Enable if on low-res monitor; disable for linear texts.
 	autoHinting = true
 	#The first font family to use. See fallbackFontFamilyList
-	firstFontFamily = "./fonts/NotoSansJP-Medium.ttf"
+	firstFontFamily = "./fonts/Montserrat-Medium.ttf"
 	#A set of fallback font families to determine the typeface to use.
 	#The order is first > fallbacks. TrueType & OpenType are supported.
 	#Each element can be one of the following two cases:
@@ -158,7 +158,7 @@
 	#Note that for TTC/OTC font, you should register it and select one of font families.
 	#Otherwise, only the first font family from the TrueType/OpenType Collection will be used.
 	#This is only read once when the game is loaded, you can reload via in-game GUI.
-	fallbackFontFamilyList = ["Noto Sans", "Segoe UI", "San Francisco", "Open Sans", "SimHei", "STHeiti", "Segoe UI Variable", "mui-i18n-compat"]
+	fallbackFontFamilyList = ["./fonts/NotoSansJP-Regular.ttf", "Segoe UI", "San Francisco", "Open Sans", "SimHei", "STHeiti", "Segoe UI Variable", "mui-i18n-compat"]
 	#Whether to use Google Noto Color Emoji, otherwise grayscale emoji (faster).
 	#See Unicode 15.0 specification for details on how this affects text layout.
 	useColorEmoji = true
