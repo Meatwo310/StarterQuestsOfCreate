@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "304AEDE3DF03BEBB"
-	group: ""
+	group: "5B6E15D4AD2C3BEC"
 	icon: "create:mechanical_arm"
 	id: "304AEDE3DF03BEBB"
 	order_index: 2
@@ -663,6 +663,43 @@
 			]
 			title: "憑霊加工"
 			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["633E0F3B6A10D878"]
+			description: ["　&9Create: Connected&rの&6ファンの触媒&rを利用すれば、加工気流をより容易に扱うことができます。"]
+			icon: "create_connected:fan_blasting_catalyst"
+			id: "4A93C6C72AFA39D5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1EFB9727E1D53AC3"
+				table_id: 133561594856328009L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "2C47AE1C4D8EC449"
+					item: "create_connected:fan_blasting_catalyst"
+					type: "item"
+				}
+				{
+					id: "379745FDB2E34C70"
+					item: "create_connected:fan_smoking_catalyst"
+					type: "item"
+				}
+				{
+					id: "06557D4ED711C23B"
+					item: "create_connected:fan_splashing_catalyst"
+					type: "item"
+				}
+				{
+					id: "798D67D257254051"
+					item: "create_connected:fan_haunting_catalyst"
+					type: "item"
+				}
+			]
+			title: "表面張力"
+			x: 0.0d
 			y: -2.0d
 		}
 	]

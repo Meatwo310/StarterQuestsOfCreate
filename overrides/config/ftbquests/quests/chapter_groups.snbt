@@ -1,8 +1,9 @@
 {
 	chapter_groups: [
+		{ id: "5B6E15D4AD2C3BEC", title: "チュートリアル" }
 		{ id: "198F0D9673850C85", title: "雑多" }
-		{ id: "304628E910EF7418", title: "ミッドゲーム" }
-		{ id: "37575636A3294EA1", title: "エンドゲーム" }
+		{ id: "304628E910EF7418", title: "たくさんのMODに触れよう" }
+		{ id: "37575636A3294EA1", title: "納品作業" }
 		{ id: "5FFDEC9D991AE136", title: "Archived" }
 	]
 }

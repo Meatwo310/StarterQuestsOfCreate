@@ -70,7 +70,7 @@
 	#The shadow radius of tooltip, if rounded, in GUI Scale Independent Pixels.
 	#No impact on performance.
 	#Range: 0.0 ~ 32.0
-	shadowRadius = 10.0
+	shadowRadius = 0.0
 	#The corner radius of tooltip border, if rounded, in GUI Scale Independent Pixels.
 	#Range: 0.0 ~ 8.0
 	cornerRadius = 3.0

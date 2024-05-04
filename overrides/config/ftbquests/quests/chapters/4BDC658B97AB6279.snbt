@@ -1010,14 +1010,14 @@
 			description: ["　&9Extra Storage&rにより、上位ディスクが4種類追加されています。"]
 			id: "2F54D4C39D9E2B4D"
 			rewards: [{
-				id: "78E6035A9B591560"
-				item: "extrastorage:disk_16384k"
+				id: "523C68CF92504EFD"
+				item: "extrastorage:disk_1024k"
 				type: "item"
 			}]
 			shape: "gear"
 			tasks: [{
 				id: "04AED973DCE13E7E"
-				item: "extrastorage:disk_1024k"
+				item: "extrastorage:disk_256k"
 				type: "item"
 			}]
 			title: "&6クソデカディスク"

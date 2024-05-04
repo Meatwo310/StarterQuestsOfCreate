@@ -206,5 +206,24 @@
     },
     "net.mcreator.createatam.client.gui.BrassSpeakerGUIScreen": {
         "playerSideOnly": true
+    },
+    "com.ultramega.cabletiers.gui.TieredImporterScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 36
+            }
+        }
+    },
+    "com.refinedmods.refinedstorage.screen.CrafterManagerScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 17
+            }
+        }
+    },
+    "de.maxhenkel.corpse.gui.DeathHistoryScreen": {
+        "ignore": true
     }
 }

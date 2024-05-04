@@ -4,7 +4,6 @@
 	disable_toast: true
 	filename: "52A92CC371D2DE6B"
 	group: "198F0D9673850C85"
-	hide_quest_details_until_startable: true
 	icon: "minecraft:diamond"
 	id: "52A92CC371D2DE6B"
 	order_index: 0
@@ -65,25 +64,29 @@
 		{
 			can_repeat: true
 			dependencies: ["0D21794DE735B366"]
-			description: ["　大量の肉と少々の魔法で村人を錬成できます。"]
-			icon: "minecraft:villager_spawn_egg"
+			description: ["　&6鶏肉&rと&6Warp Stone&rを、村人と交換できます。このクエストは何度でも受けることができます。"]
+			icon: "easy_villagers:villager"
 			id: "6C188751AA07BABD"
 			optional: true
 			rewards: [{
-				id: "4492A649BF25E7C8"
-				item: "minecraft:villager_spawn_egg"
-				team_reward: true
+				count: 2
+				icon: "easy_villagers:villager"
+				id: "583B89DAAFCFF8D4"
+				item: "easy_villagers:villager"
 				type: "item"
 			}]
 			size: 1.5d
 			tasks: [
 				{
-					count: 32L
+					consume_items: true
+					count: 64L
 					id: "07CCD08D312DD32C"
 					item: "minecraft:chicken"
 					type: "item"
 				}
 				{
+					consume_items: true
+					count: 2L
 					id: "1B08A7E7E2BA289C"
 					item: {
 						Count: 1b
@@ -97,7 +100,7 @@
 			]
 			title: "&b村人錬成"
 			x: 0.0d
-			y: -3.75d
+			y: -4.5d
 		}
 		{
 			can_repeat: true
@@ -127,6 +130,7 @@
 			}]
 			size: 1.5d
 			tasks: [{
+				consume_items: true
 				count: 64L
 				id: "114E1CD2E87DFD2D"
 				item: "minecraft:diamond"
@@ -134,7 +138,44 @@
 			}]
 			title: "&bレアアイテムガチャ"
 			x: 0.0d
-			y: -2.25d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0D21794DE735B366"]
+			description: ["　&6チェスト&rを消費して、&9Create&rの一般的なアイテムが入ったクレートを入手することができます。このクエストは何度でも受けることができます。"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:lootcrate"
+				tag: {
+					type: "basic_items"
+				}
+			}
+			id: "55B2C2A5B114BD51"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "53E618D54D199E8D"
+				item: {
+					Count: 1b
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "basic_items"
+					}
+				}
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "56C5B63D0324A2D1"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			title: "&bアイテムガチャ"
+			x: 0.0d
+			y: -3.0d
 		}
 	]
 	title: "&6アイテム交換所"

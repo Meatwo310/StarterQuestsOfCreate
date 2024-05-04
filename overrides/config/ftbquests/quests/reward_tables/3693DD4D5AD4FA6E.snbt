@@ -25,8 +25,8 @@
 		{ item: "minecraft:nether_star" }
 		{ count: 4, item: "minecraft:shulker_shell" }
 		{ item: "minecraft:totem_of_undying", weight: 0.5f }
-		{ count: 8, item: "minecraft:ender_pearl" }
-		{ item: "minecraft:dragon_breath", weight: 0.125f }
+		{ count: 8, item: "minecraft:ender_pearl", weight: 2.0f }
+		{ count: 8, item: "minecraft:dragon_breath", weight: 0.125f }
 		{ item: "minecraft:dragon_head", weight: 0.0625f }
 	]
 	title: "Rare Items"

@@ -1,0 +1,55 @@
+{
+	icon: {
+		Count: 1b
+		id: "ftbquests:lootcrate"
+		tag: {
+			type: "basic_items"
+		}
+	}
+	id: "7B12B2036F6C9309"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "basic_items"
+	}
+	loot_size: 8
+	order_index: 6
+	rewards: [
+		{ item: "create:shaft", weight: 8.0f }
+		{ item: "create:cogwheel", weight: 8.0f }
+		{ item: "create:large_cogwheel", weight: 8.0f }
+		{ item: "create:gearbox", weight: 4.0f }
+		{ item: "create:encased_chain_drive", weight: 4.0f }
+		{ item: "create:water_wheel" }
+		{ item: "create:large_water_wheel" }
+		{ item: "create:blaze_burner", weight: 0.5f }
+		{ item: "create:chute", weight: 2.0f }
+		{ item: "create:fluid_pipe" }
+		{ item: "create:depot", weight: 2.0f }
+		{ item: "create:fluid_tank" }
+		{ item: "create:white_sail", weight: 4.0f }
+		{ item: "create:andesite_casing", weight: 4.0f }
+		{ item: "create:brass_casing", weight: 2.0f }
+		{ item: "create:copper_casing", weight: 3.0f }
+		{ item: "create:railway_casing" }
+		{ item: "create:track", weight: 2.0f }
+		{ item: "create:andesite_funnel", weight: 4.0f }
+		{ item: "create:brass_funnel" }
+		{ item: "create:smart_chute" }
+		{ item: "create:brass_tunnel" }
+		{ item: "create:polished_rose_quartz", weight: 2.0f }
+		{ item: "create:sturdy_sheet", weight: 2.0f }
+		{ item: "create:blaze_cake", weight: 0.5f }
+		{ item: "create:andesite_alloy", weight: 8.0f }
+		{ item: "create:belt_connector", weight: 4.0f }
+		{ item: "create:white_seat" }
+		{ item: "create:framed_glass", weight: 4.0f }
+		{ item: "create_connected:encased_chain_cogwheel", weight: 4.0f }
+		{ item: "create_connected:inverted_clutch" }
+	]
+	title: "Basic Items"
+}

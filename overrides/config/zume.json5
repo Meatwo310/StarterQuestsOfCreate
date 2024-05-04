@@ -4,7 +4,7 @@
 	   If you disable this, you should also try setting `zoomSmoothnessMs` to `0`.
 	   DEFAULT: `true`
 	*/
-	"enableCinematicZoom": true,
+	"enableCinematicZoom": false,
 	/* 
 	   Mouse Sensitivity will not be reduced below this amount while zoomed in.
 	   Set to `1.0` to prevent it from being changed at all (not recommended without `enableCinematicZoom`).
@@ -27,7 +27,7 @@
 	   Set to `0` to disable animations.
 	   DEFAULT: `150`
 	*/
-	"zoomSmoothnessMs": 150,
+	"zoomSmoothnessMs": 50,
 	/* 
 	   The exponent used for easing animations.
 	   You should probably leave this at the default if you don't understand what it does.

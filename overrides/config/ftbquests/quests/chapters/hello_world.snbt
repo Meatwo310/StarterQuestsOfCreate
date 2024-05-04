@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "hello_world"
-	group: ""
+	group: "5B6E15D4AD2C3BEC"
 	icon: "ftbquests:book"
 	id: "78222F3A6C3C49DF"
 	order_index: 0
@@ -10,7 +10,7 @@
 	quests: [
 		{
 			description: [
-				"　クエストページへようこそ！"
+				"　クエストへようこそ！"
 				""
 				"　このMODPackは、&9FTB Quest&rを用いて作成されたクエストの進行によりワールドを発展させ、MODについての知見を深めることが目的となります。"
 				""
@@ -633,9 +633,13 @@
 		{
 			dependencies: ["6F8987BC4309AAFA"]
 			description: [
-				"　&9Oculus&rは、&9Embeddium/Rubidium&r環境でシェーダーを使用するためのMODです。シェーダーを有効化/無効化するには&6K&rキーを、種類を切り替えるには&6O&rキーを、リロードするには&6I&rキーを押してください。"
-				" "
-				"　なおEmbeddiumやRubidiumはFabric版&9Sodium&rのForge版ポート、OculusはFabric版&9Iris&rのForge版ポートです。"
+				"　&9Terralith&rは、地形生成を大きく変化させるMODです。他のMODとは異なり、Terralithの地形はバニラのブロックのみを用いて構成されます。このMODを導入する場合、可能ならワールドを作り直すことをおすすめします。"
+				""
+				"　&9Better Villages&rや&9ChoiceTheorem's Overhauled Village&rは、生成される村をより豪華にします。"
+				""
+				"　&9Oculus&r&7(Fabric版&1Iris&7のForge版ポート)&rは、&9Embeddium/Rubidium&r&7(Fabric版&1Sodium&7のForge版ポート)&r環境下でシェーダーを使用するためのMODです。Createのからくりの描画に問題が生じる場合は、&9Iris \\& Oculus Flywheel Compat&rを無効化することで改善する場合があります。"
+				""
+				"　シェーダーを有効化/無効化するには&6K&rキーを、シェーダーパックを切り替えるには&6O&rキーを、リロードするには&6I&rキーを押してください。"
 			]
 			icon: "minecraft:grass_block"
 			id: "433465CD0E4736FE"
@@ -908,7 +912,7 @@
 				type: "checkmark"
 			}]
 			title: "注意: このパックは開発中です"
-			x: -3.5d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
@@ -972,36 +976,6 @@
 			}]
 			title: "アイテムを高速移動"
 			x: 1.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["49FCEA142093CFC8"]
-			description: [
-				"　このMODPackには、進行に必須ではないMODがいくつか導入されています。これらはお使いのランチャーから有効化/無効化することが可能です。以下はその一部です:"
-				""
-				"&7[デフォルトで無効]&r"
-				"　&9Terralith&rは、生成される地形を大きく変化させるMODです。他のMODとは異なり、Terralithの地形はバニラのブロックのみを用いて構成されます。このMODを導入する場合、可能ならワールドを作り直すことをおすすめします。"
-				""
-				"&7[デフォルトで有効]&r"
-				"　&9Oculus&rは、&9Embeddium/Rubidium&r環境でシェーダーを使用するためのMODです。シェーダーが必要ない場合は無効化してください。"
-				""
-				"　一部の環境下でCreateのからくりの描画に問題が生じる場合は、&9Iris \\& Oculus Flywheel Compat&rを無効化してください。ただし、描画における負荷は増加します。"
-			]
-			icon: "createdeco:orange_decal"
-			id: "1B856FE391473FE1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "18E0D73956DABEC9"
-				table_id: 133561594856328009L
-				type: "loot"
-			}]
-			tasks: [{
-				id: "7B4D3E5A8A213684"
-				title: "OK"
-				type: "checkmark"
-			}]
-			title: "任意導入のMODについて"
-			x: -2.5d
 			y: -2.0d
 		}
 	]

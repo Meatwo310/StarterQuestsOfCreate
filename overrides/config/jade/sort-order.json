@@ -53,6 +53,9 @@
   "jade:distance": null,
   "jade:block_face": null,
   "create:backtank_capacity": null,
+  "easy_villagers:villager": null,
+  "easy_villagers:converter": null,
+  "easy_villagers:breeder": null,
   "corpse:corpse": null,
   "create:blaze_burner": null,
   "create:backtank_capacity": null,
@@ -105,5 +108,8 @@
   "jade:registry_name": null,
   "jade:mod_name": null,
   "jade:distance": null,
-  "jade:block_face": null
+  "jade:block_face": null,
+  "easy_villagers:villager": null,
+  "easy_villagers:converter": null,
+  "easy_villagers:breeder": null
 }

@@ -6,11 +6,18 @@
 	icon: "create_enchantment_industry:enchanting_guide"
 	id: "68BFC3C53AB72DFB"
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [{
+		id: "0164411EA9BB0649"
+		linked_quest: "53B70D61CA1E1DA5"
+		shape: "gear"
+		size: 1.5d
+		x: 3.75d
+		y: -4.5d
+	}]
 	quests: [
 		{
 			dependencies: ["0D21794DE735B366"]
-			description: ["　&9Create: Balanced Flight&rの&6Flight Anchor&rに動力を与えると、周囲で&6クリエイティブ飛行&rが行えるようになります。効果範囲はRPMの値と同等です。&cSU消費が非常に大きい&rことや、&c最低でも30RPM以上の動力が必要&rであること、&cオーバーワールド以外では動作しない&rことに注意してください。"]
+			description: ["　&9Create: Balanced Flight&rの&6Flight Anchor&rに動力を与えると、周囲で&6クリエイティブ飛行&rが行えるようになります。効果範囲はRPMの値と同等です。&c最低でも30RPM以上の動力が必要&rで、&c応力影響も非常に大きい&rため、強力な原動機を用意できるまでは使用することが難しいかもしれません。このブロックは&cオーバーワールド以外では動作しない&rことに注意してください。"]
 			id: "75DB3FB57F502C90"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -32,7 +39,7 @@
 		{
 			dependencies: ["0D21794DE735B366"]
 			description: [
-				"　&6ギアシフト&rは、RS信号が入力されたときに動力を逆向きの回転で伝えます。単に動力の向きを変えたいだけであれば、ギアボックスを使用することもできます。"
+				"　&6ギアシフト&rは、RS信号が入力されたときに動力を逆向きの回転で伝えます。"
 				""
 				"　&6可変チェーンギアシフト&rは、レッドストーン信号の強さに応じて自身や他のチェーンギアシフトの速度を調節する機械です。&6アナログレバー&rなどを用いればより細かい調整が行なえます。"
 				""
@@ -388,7 +395,7 @@
 				type: "item"
 			}]
 			title: "&6つよつよエンチャント"
-			x: 0.75d
+			x: 3.75d
 			y: -1.5d
 		}
 		{
@@ -408,7 +415,7 @@
 				type: "item"
 			}]
 			title: "魂が吸い取られる"
-			x: -2.25d
+			x: 0.75d
 			y: -1.5d
 		}
 		{
@@ -442,7 +449,7 @@
 				}
 			]
 			title: "好きなエンチャントを好きなだけ"
-			x: -0.75d
+			x: 2.25d
 			y: -2.25d
 		}
 		{
@@ -470,8 +477,73 @@
 				}
 			]
 			title: "紙へのプリントはできません"
-			x: -0.75d
+			x: 2.25d
 			y: -0.75d
+		}
+		{
+			dependencies: ["0D21794DE735B366"]
+			description: ["　&9Create: Connected&rは、より便利で発展的な伝達機械を追加します。"]
+			icon: "create_connected:brass_gearbox"
+			id: "5C2899B5B92C194B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71E5A5BE2FFF76D1"
+				table_id: 3932730223930702446L
+				type: "loot"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "28194F84D879B009"
+					item: "create_connected:encased_chain_cogwheel"
+					type: "item"
+				}
+				{
+					id: "788D0BAA30326F6F"
+					item: "create_connected:parallel_gearbox"
+					type: "item"
+				}
+				{
+					id: "40F47F5503BA6A68"
+					item: "create_connected:six_way_gearbox"
+					type: "item"
+				}
+				{
+					id: "7C9FB38ECA9303F5"
+					item: "create_connected:overstress_clutch"
+					type: "item"
+				}
+				{
+					id: "0BF50C2236DD633C"
+					item: "create_connected:brass_gearbox"
+					type: "item"
+				}
+				{
+					id: "551C3ABD0C8F67C2"
+					item: "create_connected:brake"
+					type: "item"
+				}
+			]
+			title: "かゆいところに手が届く"
+			x: -0.75d
+			y: -8.25d
+		}
+		{
+			description: [
+				"　&9Create: More Automation&rは、様々な便利レシピを追加することで、石や宝石、染料等の作成を容易にしています。"
+				""
+				"　例えば、安山岩を憑霊加工することで、&6ネザーラック&rを作成できます。"
+			]
+			id: "1A2A03C9FB32E94B"
+			size: 1.5d
+			tasks: [{
+				id: "297A93AF90E9151F"
+				title: "OK"
+				type: "checkmark"
+			}]
+			title: "無限資源"
+			x: -2.25d
+			y: -1.5d
 		}
 	]
 	title: "さらなる自動化"

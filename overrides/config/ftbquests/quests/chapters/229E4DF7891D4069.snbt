@@ -113,7 +113,6 @@
 							value: "^tinygates:(?!tiny_).*$"
 						}
 					}
-					title: "Tiny Gatesの回路"
 					type: "item"
 				}
 				{
@@ -125,7 +124,6 @@
 							value: "^tinygates:tiny_.*$"
 						}
 					}
-					title: "Tiny Gatesの小さな回路"
 					type: "item"
 				}
 			]
@@ -532,9 +530,15 @@
 		}
 		{
 			dependencies: ["0D21794DE735B366"]
-			description: ["　&9Copycats+&rは、Createのコピーブロックの種類を増やすMODです。作成するには、石切台を使用してください。"]
+			description: ["　&9Copycats+&rは、Createのコピーブロックの種類を増やすMODです。このMODのブロックを作成するには、石切台を使用してください。"]
 			icon: "copycats:copycat_stairs"
 			id: "50D4F86ED916B6CC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A22BE74A420C867"
+				table_id: 3932730223930702446L
+				type: "loot"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "5C95BBF73B0204F4"

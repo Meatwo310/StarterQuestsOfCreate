@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "welcome_to_the_create_world"
-	group: ""
+	group: "5B6E15D4AD2C3BEC"
 	icon: "create:cogwheel"
 	id: "3E34B1B84538F48C"
 	order_index: 1
@@ -68,7 +68,7 @@
 		}
 		{
 			dependencies: ["6FC8A9B8CDBF2241"]
-			description: ["　&6水車&rは水流から回転力を生み出す機械です。風車よりも回転速度(&6RPM&r)が早く、低コストで量産が可能ですが、許容応力(&6SU&r)は弱めです。複数台連結して使用するのが良いでしょう。詳細は&6W&rキーを長押しして思案画面を確認してください。"]
+			description: ["　&6水車&rは水流を回転力に変換する機械です。風車よりも回転速度(&6RPM&r)が早く、量産が可能ですが、許容応力(&6SU&r)は弱めです。複数台連結して使用してください。詳細は&6W&rキーを長押しして思案画面を確認してください。"]
 			icon: "create:water_wheel"
 			id: "5B5C6F8090D85CC6"
 			rewards: [{
@@ -97,7 +97,7 @@
 		{
 			dependencies: ["6FC8A9B8CDBF2241"]
 			description: [
-				"　&6風車&rは風の力から回転力を生み出す機械です。水車よりも許容応力(&6SU&r)が大きいですが、回転速度(&6RPM&r)は遅めです。詳細は&6W&rキーを長押しして思案画面を確認してください。"
+				"　&6風車&rは風力を回転力に変換する機械です。水車よりも許容応力(&6SU&r)が大きく、強化が簡単ですが、回転速度(&6RPM&r)は遅めです。詳細は&6W&rキーを長押しして思案画面を確認してください。"
 				""
 				"　帆とみなされるのは&6帆&r、&6帆フレーム&r、&6羊毛&rですが、どれを使用しても効率は変化しません。"
 			]
@@ -494,10 +494,11 @@
 		{
 			dependencies: ["1FD92DE1CB4DBAA5"]
 			description: [
-				"　Createでの回転力は、&6大きな歯車&rや&6ギアボックス&rなどを用いて向きを変えることができます。詳細は思案画面を確認してください。"
+				"　Createでの回転力は、&6大きな歯車&rや&6ギアボックス&r、&6ギアシフト&rなどを用いて向きを変えることができます。詳細は思案画面を確認してください。"
 				""
 				"　なお、機械自体の向きは、&6レンチ&rで右クリックすれば、その面を軸に時計回りで回転させることができます。また、大抵の機械類はレンチで&6Shift&r+&6右クリック&rすることで簡単に回収可能です。"
 			]
+			icon: "create:gearbox"
 			id: "615804DD646C221D"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -506,11 +507,18 @@
 				type: "random"
 			}]
 			size: 1.5d
-			tasks: [{
-				id: "7C6A79FC509FD4E5"
-				item: "create:gearbox"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7C6A79FC509FD4E5"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					id: "224161FD89514C46"
+					item: "create_connected:inverted_gearshift"
+					type: "item"
+				}
+			]
 			title: "軸の回転"
 			x: 0.0d
 			y: -0.75d
@@ -523,7 +531,7 @@
 			description: [
 				"　水車または風車から得た動力を、メカニカルプレスや石臼に伝達しましょう。伝達に使用できるブロックはいくつかあるので、見栄えやコストに合わせたものを使用しましょう。"
 				""
-				"　&6クラッチ&rは、RS信号を入力している間、&b動力の伝達を停止&rすることができます。"
+				"　&6クラッチ&rは、RS信号を入力している間、&b動力の伝達を停止&rすることができます。&9Create: Connected&rの&6反転クラッチ&rは逆に、RS信号を入力しない限り動力を伝達しません。"
 				""
 				"　それぞれの機械の使い方は思案画面を確認してください。"
 			]
@@ -557,6 +565,11 @@
 					item: "create:clutch"
 					type: "item"
 				}
+				{
+					id: "1D25C95E27762E0C"
+					item: "create_connected:inverted_clutch"
+					type: "item"
+				}
 			]
 			title: "伝達"
 			x: -1.5d
@@ -567,10 +580,10 @@
 			description: ["　&6各種ケーシング&rで歯車やシャフトなどの伝達機械を飾ることができます。また、歯車はケースを被せると、&bシャフトや歯車が繋がらないように&rできます。これは狭い場所での歯車の干渉防止に有効です。"]
 			id: "7E45B56FA92B3241"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "4C3039D4C189828A"
-				table_id: 133561594856328009L
-				type: "random"
+				count: 8
+				id: "02CBCFE128EDE011"
+				item: "create_crystal_clear:copper_clear_glass_casing"
+				type: "item"
 			}]
 			tasks: [{
 				id: "2B9647B4684EA331"

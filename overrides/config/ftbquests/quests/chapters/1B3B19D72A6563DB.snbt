@@ -12,7 +12,14 @@
 	}
 	id: "1B3B19D72A6563DB"
 	order_index: 6
-	quest_links: [ ]
+	quest_links: [{
+		id: "5AA8527B311ED807"
+		linked_quest: "75DB3FB57F502C90"
+		shape: "gear"
+		size: 1.5d
+		x: 4.5d
+		y: 6.0d
+	}]
 	quests: [
 		{
 			dependencies: ["0D21794DE735B366"]
@@ -59,7 +66,7 @@
 			}]
 			title: "自動生成テレポーター"
 			x: 4.5d
-			y: -0.75d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -93,8 +100,8 @@
 				type: "item"
 			}]
 			title: "ポータブルテレポーター"
-			x: 4.0d
-			y: 0.5d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -136,8 +143,8 @@
 				}
 			]
 			title: "転送の巻物"
-			x: 5.0d
-			y: 0.5d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -165,8 +172,8 @@
 				type: "item"
 			}]
 			title: "なんでも転送できる"
-			x: 4.5d
-			y: -2.0d
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["60A20F68E75D6CEE"]
@@ -199,7 +206,7 @@
 			}]
 			title: "&6ハエたたき"
 			x: 3.0d
-			y: 2.25d
+			y: 4.5d
 		}
 		{
 			dependencies: ["466B00FD629B5C9F"]
@@ -239,7 +246,7 @@
 			]
 			title: "羽"
 			x: 4.5d
-			y: 2.25d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0D21794DE735B366"]
@@ -319,7 +326,7 @@
 			}]
 			title: "美味しくない卵"
 			x: 1.5d
-			y: 2.25d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0D21794DE735B366"]
@@ -339,10 +346,13 @@
 			}]
 			title: "サンドバッグ君"
 			x: 1.5d
-			y: -0.75d
+			y: 0.5d
 		}
 		{
-			dependencies: ["42E6DEE67DBBE541"]
+			dependencies: [
+				"42E6DEE67DBBE541"
+				"75DB3FB57F502C90"
+			]
 			description: [
 				"　&9Create: Balanced Flight&rの&6Ascended Flight Ring&rは、装備中どこでもクリエイティブ飛行とエリトラ飛行を可能にする&6最強の飛行手段&rです。このリングを使用してエリトラ飛行している間、前進キーとダッシュキーを押すことで、&cロケット花火を消費せずに&r加速が行なえます。"
 				""
@@ -364,7 +374,70 @@
 			}]
 			title: "&6最強の飛行手段"
 			x: 6.0d
-			y: 2.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["0D21794DE735B366"]
+			description: [
+				"　&9Easy Villagers&rを用いて、&c村人をアイテム化&rすることができます。インベントリに入れて持ち運んだり、専用のブロックに入れて仕事をさせることができます。"
+				""
+				"　&6取引ブロック&rでは、村人と取引することができます。村人や職業ブロックは、右クリックで投入できます。&6自動取引ブロック&rを用いれば、取引を自動化することができます。どちらもアイテムの補充にはクールタイムがあるので注意してください。"
+				""
+				"　&6農業ブロック&rは野菜を、&6製鉄所ブロック&rは鉄を製造します。"
+				""
+				"　&6繁殖ブロック&rは、パンや野菜を消費して、村人を繁殖することができます。繁殖した子供村人は、&6成長促進ブロック&rで大人にすることができます。"
+				""
+				"　&6ゾンビ化ブロック&rは、ポーションと金リンゴを消費して、村人のゾンビ化と治療を行います。"
+			]
+			icon: "easy_villagers:villager"
+			id: "16ACE7F483CA5D24"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2F22C3D8CA1CF4A7"
+					item: "easy_villagers:villager"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "6AB89766945C682E"
+					item: "easy_villagers:trader"
+					type: "item"
+				}
+				{
+					id: "1D1248C55B9CEDF2"
+					item: "easy_villagers:auto_trader"
+					type: "item"
+				}
+				{
+					id: "7FC8C592CE90A4DB"
+					item: "easy_villagers:farmer"
+					type: "item"
+				}
+				{
+					id: "270AD6F9142DC97C"
+					item: "easy_villagers:iron_farm"
+					type: "item"
+				}
+				{
+					id: "2300643591F3B6F9"
+					item: "easy_villagers:breeder"
+					type: "item"
+				}
+				{
+					id: "0CE374A3595E41C7"
+					item: "easy_villagers:incubator"
+					type: "item"
+				}
+				{
+					id: "3B39860450345387"
+					item: "easy_villagers:converter"
+					type: "item"
+				}
+			]
+			title: "村人工業"
+			x: 3.0d
+			y: 0.5d
 		}
 	]
 	title: "冒険と探索"

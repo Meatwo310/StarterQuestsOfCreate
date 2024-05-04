@@ -5,7 +5,7 @@
 	enableFpsReducer = true
 	#Waiting time(sec) before reducing the FPS. (0:OFF)
 	#Range: 0 ~ 86400
-	waitingTime = 45
+	waitingTime = 60
 	#Max frame rate when there is no operation for the specified period of time.
 	#Range: 1 ~ 60
 	idleFps = 5

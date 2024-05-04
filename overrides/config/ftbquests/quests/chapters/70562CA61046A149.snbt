@@ -21,7 +21,7 @@
 				"1B3B19D72A6563DB"
 			]
 			description: ["　ヒント: 真鍮ふるい・真鍮メッシュを用いて金属資源を無限化しましょう。"]
-			hide: true
+			hide: false
 			icon: "minecraft:iron_block"
 			id: "5BBB2345E4E61A88"
 			tasks: [
@@ -248,7 +248,7 @@
 				"7C8ECC6188171056"
 			]
 			description: [
-				"　全クエストクリアおめでとうございます！　これにてこのMODPackは終了となります。最後に&dクリエイティブ系&rアイテムを配布しますので、存分に使い倒してみてください。"
+				"　全クエストクリアおめでとうございます！　これにてこのMODPackは終了となります。"
 				""
 				"　最後までプレイしてくださってありがとうございました。完走お疲れ様です！"
 			]
@@ -257,77 +257,36 @@
 			id: "4F9975ACE4A20E3C"
 			rewards: [
 				{
-					id: "28D1ED2251ACFA69"
-					item: "create:creative_motor"
+					count: 64
+					id: "78FCB532D67B30FF"
+					item: "create_enchantment_industry:hyper_experience_bottle"
 					type: "item"
 				}
 				{
-					id: "4FD4042A9230E989"
-					item: "create:creative_fluid_tank"
+					id: "289401D62C8905E1"
+					item: "refinedstorage:creative_controller"
 					type: "item"
 				}
 				{
-					id: "0FDAB0DF286E0CFD"
-					item: "create:creative_crate"
+					id: "416E020C4AC1A791"
+					item: "extrastorage:disk_16384k"
 					type: "item"
 				}
 				{
-					id: "5EC1F3D511D5C575"
-					item: "create:creative_blaze_cake"
-					type: "item"
-				}
-				{
-					id: "04AAE8E3338B7F9C"
-					item: "create:handheld_worldshaper"
-					type: "item"
-				}
-				{
-					id: "3C4E7E8C7EFBCD79"
-					item: "createaddition:creative_energy"
-					type: "item"
-				}
-				{
-					id: "22594DC30794192B"
-					item: "refinedstorage:creative_storage_disk"
-					type: "item"
-				}
-				{
-					id: "7DD7D8EEE9CD930F"
-					item: "refinedstorage:creative_fluid_storage_disk"
-					type: "item"
-				}
-				{
-					id: "2E985E6252C47A74"
+					id: "495E0A1E58EDE480"
 					item: {
 						Count: 1b
-						id: "refinedstorage:creative_portable_grid"
-						tag: { }
+						id: "create_confectionery:full_chocolate_bar"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+							HideFlags: 1
+							Unbreakable: 1b
+						}
 					}
-					type: "item"
-				}
-				{
-					id: "4EA31CCC39D13796"
-					item: "refinedstorage:purple_creative_controller"
-					type: "item"
-				}
-				{
-					id: "5A3E9EAB02F95B4F"
-					item: "refinedstorage:creative_wireless_crafting_monitor"
-					type: "item"
-				}
-				{
-					id: "44FDFC429D0AED50"
-					item: "universalgrid:creative_wireless_universal_grid"
-					type: "item"
-				}
-				{
-					id: "70835573D1A9A845"
-					item: "storagedrawers:creative_storage_upgrade"
-					type: "item"
-				}
-				{
-					id: "001CDB874C47C750"
-					item: "storagedrawers:creative_vending_upgrade"
 					type: "item"
 				}
 			]

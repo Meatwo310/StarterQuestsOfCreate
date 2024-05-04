@@ -135,14 +135,14 @@
 				"5C064E39A2390E79"
 			]
 			description: [
-				"　&6鉄道時刻表&rを用いれば、任意のモブ、またはブレイズバーナーを用いて列車を&b自動運行&rさせることができます。時刻表は右クリックして編集できます。出来上がったら、時刻表をモブに手渡しましょう。モブはリードで捕まえ、そのまま運転台のすぐそばにあるシートに右クリックしてシートに座らせておきます。"
+				"　&6鉄道時刻表&rを用いれば、任意のモブ、ブレイズバーナー、または&9Steam 'n' Rails&rの&6車掌&rを用いて列車を&b自動運行&rさせることができます。時刻表は右クリックして編集できます。出来上がったら、時刻表をモブに手渡しましょう。モブはリードで捕まえ、そのまま運転台のすぐそばにあるシートに右クリックしてシートに座らせておきます。"
 				""
 				"　自動運行している列車は、駅に&c示された方向からしか近づけない&r点に注意してください。双方向に停車できる駅を作成したい場合は、もう一つ駅ブロックを設置する必要があります。"
 				""
 				""
 				"　&6鉄道信号機&rを用いれば、列車の移動を制御することができます。列車は、&c鉄道信号機の向いている方向にしか進めません&7(逆向きの信号機がもう一台ある場合を除きます)&r。また、信号と別の信号との区間内に列車が存在する場合は、他の列車がその区間に侵入できなくなります。レンチを使用してモードを変更した場合、区間とその次の区間に侵入できる場合のみ、列車が入るようになります。"
 				""
-				"　信号機はニキシー管を設置して装飾することもできます。また、レッドストーン信号で信号の切り替えが可能で、コンパレーターを用いれば現在の信号が得られます。"
+				"　信号機はニキシー管や腕木式信号機を設置して装飾することもできます。また、レッドストーン信号で信号の切り替えが可能で、コンパレーターを用いれば現在の信号が得られます。"
 				""
 				"　&6列車検知装置&rは、列車が通ったときにレッドストーン信号を発する機械で、積載されたアイテムによってフィルターすることも可能です。"
 			]
@@ -156,10 +156,9 @@
 					type: "choice"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "27BF89371F73DCC5"
-					table_id: 3932730223930702446L
-					type: "loot"
+					id: "1F1C70D4DF91C6E4"
+					item: "railways:conductor_whistle"
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -178,6 +177,23 @@
 				{
 					id: "49CB078C50967877"
 					item: "create:track_observer"
+					type: "item"
+				}
+				{
+					id: "2FA9C58176ABE0B1"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "railways:conductor_caps"
+						}
+					}
+					title: "Any #railways:conductor_caps"
+					type: "item"
+				}
+				{
+					id: "44DEBCC70C4E4D7B"
+					item: "railways:semaphore"
 					type: "item"
 				}
 			]
@@ -278,9 +294,98 @@
 					type: "item"
 				}
 			]
-			title: "装飾アイテムがたくさん"
+			title: "小さな装飾"
 			x: 1.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["5C064E39A2390E79"]
+			description: ["　&9Steam 'n' Rails&rは、Createの鉄道をさらに拡張するMODです。カラフルなレールや建材、列車を制御するブロックなどが追加されます。"]
+			icon: "railways:track_crimson"
+			id: "1FD2D7FA22F1D824"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1EA71FEF067E73F1"
+				table_id: 3932730223930702446L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "2553B40D647463EB"
+					item: {
+						Count: 1b
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:item_group"
+									tag: {
+										value: "railways_tracks"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											id: "railways:track_monorail"
+										}]
+									}
+								}
+							]
+						}
+					}
+					title: "Steam 'n' Railsの線路"
+					type: "item"
+				}
+				{
+					id: "4889DBB290314990"
+					item: {
+						Count: 1b
+						id: "itemfilters:item_group"
+						tag: {
+							value: "railways_palettes"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "カラフルな鉄道"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5C064E39A2390E79"]
+			description: [
+				"　&9Steam 'n' Rails&rでは&6モノレール&rを作成することもできます。使い方は通常の線路と同じです。"
+				""
+				"　&6ファントムの線路&rは完全に透明です。空中に設置すれば飛行船のようなものも作成できます。"
+			]
+			icon: "railways:track_monorail"
+			id: "125367E5E7A5F87A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "415903DA95FCF056"
+				table_id: 3932730223930702446L
+				type: "loot"
+			}]
+			tasks: [
+				{
+					id: "6833348E5EC02890"
+					item: "railways:track_monorail"
+					type: "item"
+				}
+				{
+					id: "083893238C153C21"
+					item: "railways:track_phantom"
+					type: "item"
+				}
+			]
+			title: "空を走る列車"
+			x: 0.0d
+			y: 0.5d
 		}
 	]
 	title: "鉄道と交通網"

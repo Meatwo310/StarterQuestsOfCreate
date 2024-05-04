@@ -55,11 +55,16 @@
 		{
 			dependencies: ["2745F65B850B6656"]
 			description: [
-				"・MODの追加・削除・更新や、コンフィグの調整を行いました。"
-				"　・&cCreate Armoryを削除しました&r。"
-				"　・RubidiumをEmbeddiumに変更し、各種軽量化MODを調整しました。"
+				"・多数のMODを追加・削除・更新し、コンフィグの調整を行いました。"
+				"  &7・&4Create Armoryを削除しました。"
+				"  &7・Terrarithを追加しました。"
+				"  &7・RubidiumをEmbeddiumに変更し、各種軽量化MODを調整しました。"
+				""
 				"・フォントをリソースパック形式の&7Rounded Mgen+&rから、ModernUI形式の&7Montserrat&r + &7Noto Sans JP&rに変更しました。"
-				"・クエストの説明、要求アイテム、報酬等を改善しました。"
+				""
+				"・クエストの追加・削除・内容の調整を行いました。"
+				"  &7・ガチャにてアイテムが消費されない問題を修正しました。"
+				""
 				"・一部レシピを易化しました。"
 			]
 			disable_toast: true
@@ -80,7 +85,7 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "v1.2-&ebeta-3&r"
+			title: "v1.2"
 			x: 7.5d
 			y: -3.75d
 		}
