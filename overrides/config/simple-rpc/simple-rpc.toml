@@ -20,7 +20,7 @@
 	#The second line of text under the app name
 	state = ""
 	#The Asset ID/URL of the image to display as the large image
-	largeImageKey = ["icon"]
+	largeImageKey = ["sqoc"]
 	#The text that gets displayed when the large image is hovered
 	largeImageText = "MC%mcver% - Starter Quests of Create"
 	#The Asset ID/URL of the image to display as the small image
@@ -38,7 +38,7 @@
 	#The second line of text under the app name
 	state = ""
 	#The Asset ID/URL of the image to display as the large image
-	largeImageKey = ["icon"]
+	largeImageKey = ["sqoc"]
 	#The text that gets displayed when the large image is hovered
 	largeImageText = "MC%mcver% - Starter Quests of Create"
 	#The Asset ID/URL of the image to display as the small image
@@ -56,7 +56,7 @@
 	#The second line of text under the app name
 	state = ""
 	#The Asset ID/URL of the image to display as the large image
-	largeImageKey = ["icon"]
+	largeImageKey = ["sqoc"]
 	#The text that gets displayed when the large image is hovered
 	largeImageText = "MC%mcver% - Starter Quests of Create"
 	#The Asset ID/URL of the image to display as the small image
@@ -74,7 +74,7 @@
 	#The second line of text under the app name
 	state = ""
 	#The Asset ID/URL of the image to display as the large image
-	largeImageKey = ["icon"]
+	largeImageKey = ["sqoc"]
 	#The text that gets displayed when the large image is hovered
 	largeImageText = "It's Minecraft %mcver%, but modded"
 	#The Asset ID/URL of the image to display as the small image
@@ -92,7 +92,7 @@
 	#The second line of text under the app name
 	state = ""
 	#The Asset ID/URL of the image to display as the large image
-	largeImageKey = ["icon"]
+	largeImageKey = ["sqoc"]
 	#The text that gets displayed when the large image is hovered
 	largeImageText = "MC%mcver% - Starter Quests of Create"
 	#The Asset ID/URL of the image to display as the small image
@@ -110,7 +110,7 @@
 	#The second line of text under the app name
 	state = "%day%日目 / %gametime%"
 	#The Asset ID/URL of the image to display as the large image
-	largeImageKey = ["icon"]
+	largeImageKey = ["sqoc"]
 	#The text that gets displayed when the large image is hovered
 	largeImageText = "MC%mcver% - Starter Quests of Create"
 	#The Asset ID/URL of the image to display as the small image
@@ -128,7 +128,7 @@
 	#The second line of text under the app name
 	state = "%day%日目 / %gametime%"
 	#The Asset ID/URL of the image to display as the large image
-	largeImageKey = ["icon"]
+	largeImageKey = ["sqoc"]
 	#The text that gets displayed when the large image is hovered
 	largeImageText = "MC%mcver% - Starter Quests of Create"
 	#The Asset ID/URL of the image to display as the small image
@@ -146,7 +146,7 @@
 	#The second line of text under the app name
 	state = "Playing on a Realm"
 	#The Asset ID/URL of the image to display as the large image
-	largeImageKey = ["icon"]
+	largeImageKey = ["sqoc"]
 	#The text that gets displayed when the large image is hovered
 	largeImageText = "It's Minecraft %mcver%, but modded"
 	#The Asset ID/URL of the image to display as the small image
@@ -162,7 +162,7 @@
 	#The second line of text under the app name
 	state = "%mods%個のMODが読み込まれています"
 	#The Asset ID/URL of the image to display as the large image
-	largeImageKey = ["icon"]
+	largeImageKey = ["sqoc"]
 	#The text that gets displayed when the large image is hovered
 	largeImageText = "MC%mcver% - Starter Quests of Create"
 	#The Asset ID/URL of the image to display as the small image
