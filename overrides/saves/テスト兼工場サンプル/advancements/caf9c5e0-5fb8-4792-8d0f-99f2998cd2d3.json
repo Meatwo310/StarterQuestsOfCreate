@@ -2764,6 +2764,12 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/farmersdelight/wheat_dough_from_water": {
+    "criteria": {
+      "has_wheat": "2024-05-07 20:22:08 +0900"
+    },
+    "done": true
+  },
   "create:recipes/create.base/crafting/kinetics/speedometer": {
     "criteria": {
       "has_item": "2024-05-01 13:13:16 +0900"
@@ -4118,6 +4124,12 @@
   "createdeco:recipes/createdeco.metals/cast_iron_bars": {
     "criteria": {
       "has_item": "2024-04-02 01:04:52 +0900"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/farmersdelight/pie_crust": {
+    "criteria": {
+      "has_wheat": "2024-05-07 20:22:08 +0900"
     },
     "done": true
   },
@@ -6083,6 +6095,12 @@
     },
     "done": true
   },
+  "mcwroofs:recipes/thatch": {
+    "criteria": {
+      "has_planks": "2024-05-07 20:22:08 +0900"
+    },
+    "done": true
+  },
   "create:fan_processing": {
     "criteria": {
       "0": "2024-04-04 21:01:11 +0900"
@@ -6176,6 +6194,12 @@
   "mcwlights:recipes/lamps_ceilings": {
     "criteria": {
       "has_wood": "2024-04-03 14:12:57 +0900"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/farmersdelight/wheat_dough_from_eggs": {
+    "criteria": {
+      "has_wheat": "2024-05-07 20:22:08 +0900"
     },
     "done": true
   },
@@ -6290,6 +6314,12 @@
   "minecraft:recipes/tools/golden_hoe": {
     "criteria": {
       "has_gold_ingot": "2024-04-03 15:20:09 +0900"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2024-05-07 20:22:08 +0900"
     },
     "done": true
   },
@@ -6664,6 +6694,12 @@
   "extrastorage:recipes/extrastorage_tab/netherite_crafter": {
     "criteria": {
       "has_diamond_crafter": "2024-05-02 10:37:24 +0900"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2024-05-07 20:22:08 +0900"
     },
     "done": true
   },

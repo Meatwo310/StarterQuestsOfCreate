@@ -634,11 +634,6 @@
 					type: "item"
 				}
 				{
-					id: "50A4EAE1073EB04B"
-					item: "minecraft:soul_sand"
-					type: "item"
-				}
-				{
 					id: "54C9F8AB9224A3B4"
 					item: "create:dough"
 					type: "item"
@@ -758,7 +753,7 @@
 			id: "6632A69E27E1CEB0"
 			rewards: [
 				{
-					count: 4
+					count: 2
 					id: "394D3EB8743F35F3"
 					item: "create_mechanical_extruder:mechanical_extruder"
 					type: "item"

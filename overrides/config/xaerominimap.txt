@@ -26,8 +26,8 @@ slimeChunks:false
 mapSafeMode:false
 minimapOpacity:100.0
 waypointsIngameIconScale:0
-waypointsIngameDistanceScale:0
-waypointsIngameNameScale:0
+waypointsIngameDistanceScale:2
+waypointsIngameNameScale:2
 waypointsIngameCloseScale:1.0
 antiAliasing:true
 blockColours:0

@@ -178,15 +178,10 @@
 			icon: "prefab:item_house"
 			id: "6D02788D00125B2F"
 			rewards: [{
-				id: "3D5750EAEA5E5EB1"
-				item: {
-					Count: 1b
-					id: "minecraft:shears"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
+				exclude_from_claim_all: true
+				id: "07ED6DBA5C146ACE"
+				table_id: 133561594856328009L
+				type: "random"
 			}]
 			size: 1.5d
 			tasks: [{
@@ -497,7 +492,7 @@
 		{
 			dependencies: ["6D02788D00125B2F"]
 			description: [
-				"　&9Comforts&rの&6寝袋&rを使用することで、リスポーン地点を更新せずに眠ることができます。携帯しておくと便利です。"
+				"　&9Comforts&rの&6寝袋&rを使用することで、リスポーン地点を更新せずに眠ることができます。インベントリに入れておくと便利です。"
 				""
 				"　また、&6ロープと釘&rと&6ハンモック&rを使用すると、時間を夕方までスキップすることができます。"
 				"{image:starterquestofcreate:textures/hammock.png width:960 height:600 align:1 fit:true}"
@@ -506,28 +501,26 @@
 			id: "766EBE228BC90E95"
 			rewards: [
 				{
-					count: 2
-					id: "6B4783EE56E946E7"
-					item: "comforts:rope_and_nail"
+					id: "3C28902CD9691969"
+					item: "comforts:sleeping_bag_white"
 					type: "item"
 				}
 				{
-					id: "300E4AA085B80060"
+					id: "282B2D2CDD8DD59A"
 					item: "comforts:hammock_white"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "27B29D48C51F1657"
+					item: "comforts:rope_and_nail"
 					type: "item"
 				}
 			]
 			tasks: [{
-				id: "6EF2BE1E25C91DA6"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "comforts:sleeping_bags"
-					}
-				}
-				title: "Any #comforts:sleeping_bags"
-				type: "item"
+				id: "188AD791B20413E2"
+				title: "OK"
+				type: "checkmark"
 			}]
 			title: "キャンパークラフター"
 			x: 0.0d
@@ -604,6 +597,8 @@
 				"　&9More Overlays&rにより、&6F7&rキーで敵モブが湧く明るさのブロックを表示できます。&e黄色の✗&rがあるブロックでは、日が落ちると敵が湧く可能性があることを、&c赤色の✗&rがあるブロックでは、日光に関係なく敵が湧くことを示します。"
 				""
 				"　また、&9Embeddium/Rubidium Dynamic Lights&rにより、光源となるブロックを手に持っていると周囲が照らされるようになります。設定を変更する場合は、&6ビデオ設定&r→&6Dynamic Lights&rタブを開いてください。"
+				""
+				"　&9Torchmaster&rを使用して、より協力な湧きつぶしや光源設置が行えます。&6巨大松明&rを設置すると広い範囲で敵対モブがスポーンしなくなります。また、&6野蛮なフレアランタン&rを設置すると、周囲を徐々に透明な光源で照らすことができます。"
 			]
 			icon: "minecraft:torch"
 			id: "6F8987BC4309AAFA"
@@ -617,6 +612,17 @@
 				{
 					id: "350DC2009A07E018"
 					item: "minecraft:lantern"
+					type: "item"
+				}
+				{
+					id: "6B91C83037A2E008"
+					item: "torchmaster:megatorch"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "64CB1C2215A51E9C"
+					item: "torchmaster:feral_flare_lantern"
 					type: "item"
 				}
 			]
@@ -807,9 +813,9 @@
 			id: "10489C7B49DEC237"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "3C569F602B1A0A1A"
+				id: "47024BFC8FC77478"
 				table_id: 133561594856328009L
-				type: "loot"
+				type: "random"
 			}]
 			tasks: [{
 				id: "435E7FF40E44343A"
@@ -902,9 +908,9 @@
 			id: "600CA7FF54FA1338"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5D036CD9A0BE2945"
+				id: "0ECFC074B3A7BEF4"
 				table_id: 133561594856328009L
-				type: "loot"
+				type: "random"
 			}]
 			tasks: [{
 				id: "74A003579E2B4041"
